@@ -1,103 +1,103 @@
 <?php
 // Version: 2.1 RC3; ManageBoards
 
-$txt['boards_and_cats'] = 'Manage Boards and Categories';
-$txt['order'] = 'Order';
-$txt['full_name'] = 'Full name';
-$txt['name_on_display'] = 'This is the name that will be displayed.';
-$txt['boards_and_cats_desc'] = 'Edit your categories and boards here. List multiple moderators as <em>&quot;username&quot;, &quot;username&quot;</em>. (these must be usernames and *not* display names)<br>To create a new board, click the Add Board button. To make the new board a sub-board of a current board, select "Sub-board of..." from the Order drop down menu when creating the board.';
-$txt['parent_members_only'] = 'Regular Members';
-$txt['parent_guests_only'] = 'Guests';
-$txt['cat_delete_confirm'] = 'Do you really want to delete this category?';
-$txt['board_delete_confirm'] = 'Do you really want to delete this board?';
+$txt['boards_and_cats'] = 'Upravljanje forumima i kategorijama';
+$txt['order'] = 'Poredak';
+$txt['full_name'] = 'Puno ime';
+$txt['name_on_display'] = 'Ovo je ime koje će biti prikazano.';
+$txt['boards_and_cats_desc'] = 'Ovde možete da uređujete kategorije i forume. Postavite više urednika koristeći <i>&quot;korisničko ime&quot;, &quot;korisničko ime&quot;</i>. (ovo moraju da budu korisnička a ne prikazana imena!)<br />Da biste napravili nov forum kliknite na Dodaj forum. Da biste napravili potforum trenutnog foruma, izaberite "Potforum..." iz padajuće liste "Red" pri pravljenju foruma.';
+$txt['parent_members_only'] = 'Regularni članovi';
+$txt['parent_guests_only'] = 'gostiju';
+$txt['cat_delete_confirm'] = 'Da li ste sigurni da želite da obrišete ovu kategoriju?';
+$txt['board_delete_confirm'] = 'Da li ste sigurni da želite da obrišete ovaj forum?';
 
-$txt['cat_edit'] = 'Edit Category';
-$txt['collapse_enable'] = 'Collapsible';
-$txt['collapse_desc'] = 'Allow users to collapse this category';
-$txt['cat_modify'] = '(modify)';
+$txt['cat_edit'] = 'Izmeni kategoriju';
+$txt['collapse_enable'] = 'Skupi';
+$txt['collapse_desc'] = 'Dozvoliti korisnicima da skupe kategoriju?';
+$txt['cat_modify'] = '(izmeni)';
 
-$txt['mboards_order_after'] = 'After ';
-$txt['mboards_order_inside'] = 'Inside ';
-$txt['mboards_order_first'] = 'In first place';
+$txt['mboards_order_after'] = 'Posle ';
+$txt['mboards_order_inside'] = 'Unutar ';
+$txt['mboards_order_first'] = 'Na početku';
 
-$txt['mboards_new_board'] = 'Add Board';
-$txt['mboards_new_cat_name'] = 'New Category';
-$txt['mboards_add_cat_button'] = 'Add Category';
-$txt['mboards_new_board_name'] = 'New Board';
+$txt['mboards_new_board'] = 'Dodaj forum';
+$txt['mboards_new_cat_name'] = 'Nova kategorija';
+$txt['mboards_add_cat_button'] = 'Dodaj kategoriju';
+$txt['mboards_new_board_name'] = 'Nov forum';
 
-$txt['mboards_name'] = 'Name';
-$txt['mboards_modify'] = 'modify';
-$txt['mboards_permissions'] = 'permissions';
+$txt['mboards_name'] = 'Ime';
+$txt['mboards_modify'] = 'izmeni';
+$txt['mboards_permissions'] = 'dozvole';
 // Don't use entities in the below string.
-$txt['mboards_permissions_confirm'] = 'Are you sure you want to switch this board to use local permissions?';
+$txt['mboards_permissions_confirm'] = 'Da li ste sigurni da želite da ovaj forum koristi lokalne dozvole?';
 
-$txt['mboards_delete_cat'] = 'Delete Category';
-$txt['mboards_delete_board'] = 'Delete Board';
+$txt['mboards_delete_cat'] = 'Obriši kategoriju';
+$txt['mboards_delete_board'] = 'Obriši forum';
 
-$txt['mboards_delete_cat_contains'] = 'Deleting this category will also delete the below boards, including all topics, posts and attachments within each board';
-$txt['mboards_delete_option1'] = 'Delete category and all boards contained within.';
-$txt['mboards_delete_option2'] = 'Delete category and move all boards contained within to';
-$txt['mboards_delete_board_contains'] = 'Deleting this board will also move the sub-boards below, including all topics, posts and attachments within each board';
-$txt['mboards_delete_board_option1'] = 'Delete board and move sub-boards contained within to category level.';
-$txt['mboards_delete_board_option2'] = 'Delete board and move all sub-boards contained within to';
-$txt['mboards_delete_what_do'] = 'Please select what you would like to do with these boards';
-$txt['mboards_delete_confirm'] = 'Confirm';
-$txt['mboards_delete_cancel'] = 'Cancel';
+$txt['mboards_delete_cat_contains'] = 'Brisanje ove kategorije će prouzrokovati brisanje svih foruma unutar nje uključujući i sve teme, poruke kao i priložene datoteke u dotičnim forumima';
+$txt['mboards_delete_option1'] = 'Obriši kategoriju i sve forume unutar nje.';
+$txt['mboards_delete_option2'] = 'Obriši kategoriju i premesti sve forume unutar nje u';
+$txt['mboards_delete_board_contains'] = 'Brisanjem ovog foruma ukloniće i potforume prikazane ispod, uključujući i teme, poruke i priložene datoteke svakog foruma.';
+$txt['mboards_delete_board_option1'] = 'Obriši forum i premesti potforume koje sadrži u njegovu kategoriju.';
+$txt['mboards_delete_board_option2'] = 'Obriši forum i premesti potforume koje sadrži u';
+$txt['mboards_delete_what_do'] = 'Izaberite šta želite da uradite sa ovim forumima';
+$txt['mboards_delete_confirm'] = 'Potvrdi';
+$txt['mboards_delete_cancel'] = 'Otkaži';
 
-$txt['mboards_category'] = 'Category';
-$txt['mboards_description'] = 'Description';
-$txt['mboards_description_desc'] = 'A short description of your board. HTML is not allowed, you can use the following BBC tags: {allowed_tags}';
+$txt['mboards_category'] = 'Kategorija';
+$txt['mboards_description'] = 'Opis';
+$txt['mboards_description_desc'] = 'Kratak opis foruma.';
 $txt['mboards_cat_description_desc'] = 'A short description of your category. HTML is not allowed, you can use the following BBC tags: {allowed_tags}';
-$txt['mboards_groups'] = 'Allowed Groups';
-$txt['mboards_groups_desc'] = 'Groups allowed to access this board.<br><em>Note: if the member is in any group or post group checked, they will have access to this board.</em>';
-$txt['mboards_groups_regular_members'] = 'This group contains all members that have no primary group set.';
-$txt['mboards_groups_post_group'] = 'This group is a post count based group.';
-$txt['mboards_moderators'] = 'Moderators';
-$txt['mboards_moderators_desc'] = 'Additional members to have moderation privileges on this board. Note that administrators don\'t have to be listed here.';
+$txt['mboards_groups'] = 'Dozvoljene grupe';
+$txt['mboards_groups_desc'] = 'Grupe kojima je dozvoljen pristup ovom forumu.<br /><em>Napomena: ako je korisnik član bilo koje grupe ili grupe zasnovane na broju poruka koja je ovde označena, imaće pristup ovom forumu.</em>';
+$txt['mboards_groups_regular_members'] = 'Ova grupa obuhvata sve članove koji nemaju primarnu grupu.';
+$txt['mboards_groups_post_group'] = 'Ova grupa je grupa zasnovana na broju poruka.';
+$txt['mboards_moderators'] = 'Urednici';
+$txt['mboards_moderators_desc'] = 'Dodatni članovi koji će imati uredničke privilegije na ovom forumu. Administratori ne moraju da se nalaze na ovom spisku.';
 $txt['mboards_moderator_groups'] = 'Moderator Groups';
 $txt['mboards_moderator_groups_desc'] = 'Groups whose members have moderation privileges on this board. Note that this is limited to groups which are not post-based and not "hidden".';
-$txt['mboards_count_posts'] = 'Count posts';
-$txt['mboards_count_posts_desc'] = 'Makes new replies and topics raise members\' post counts.';
-$txt['mboards_unchanged'] = 'Unchanged';
-$txt['mboards_theme'] = 'Board Theme';
-$txt['mboards_theme_desc'] = 'This allows you to change the look of your forum only inside this board.';
-$txt['mboards_theme_default'] = '(overall forum default.)';
-$txt['mboards_override_theme'] = 'Override Member\'s Theme';
-$txt['mboards_override_theme_desc'] = 'Use this board\'s theme even if the member didn\'t choose to use the defaults.';
+$txt['mboards_count_posts'] = 'Uvećavaj broj poruka';
+$txt['mboards_count_posts_desc'] = 'Čini da se novi odgovori i teme članova broje u ovom forumu.';
+$txt['mboards_unchanged'] = 'Nepromenjeno';
+$txt['mboards_theme'] = 'Tema foruma';
+$txt['mboards_theme_desc'] = 'Ova opcija vam dozvoljava da promenite izgled sajta za ovaj forum.';
+$txt['mboards_theme_default'] = '(podrazumevana tema sajta)';
+$txt['mboards_override_theme'] = 'Pregazi temu člana';
+$txt['mboards_override_theme_desc'] = 'Upotrebi temu ovog foruma čak i ako član nije izabrao da koristi podrazumevanu temu.';
 
-$txt['mboards_redirect'] = 'Redirect to a web address';
-$txt['mboards_redirect_desc'] = 'Enable this option to redirect anyone who clicks on this board to another web address.';
-$txt['mboards_redirect_url'] = 'Address to redirect users to';
-$txt['mboards_redirect_url_desc'] = 'For example: &quot;https://www.simplemachines.org&quot;.';
-$txt['mboards_redirect_reset'] = 'Reset redirect count';
-$txt['mboards_redirect_reset_desc'] = 'Selecting this will reset the redirection count for this board to zero.';
-$txt['mboards_current_redirects'] = 'Currently: %1$s';
+$txt['mboards_redirect'] = 'Preusmeri na veb adresu';
+$txt['mboards_redirect_desc'] = 'Omogućite ovu opciju da biste sve koje kliknu na ovaj forum preusmerili na odgovarajuću veb adresu.';
+$txt['mboards_redirect_url'] = 'Preusmeri korisnika na';
+$txt['mboards_redirect_url_desc'] = 'Na primer: &quot;http://www.simplemachines.org&quot;.';
+$txt['mboards_redirect_reset'] = 'Resetuj broj preusmeravanja';
+$txt['mboards_redirect_reset_desc'] = 'Odabirom ove opcije postavićete broj preusmeravanja ovog foruma na nulu.';
+$txt['mboards_current_redirects'] = 'Trenutno: %1$s';
 
-$txt['mboards_order_before'] = 'Before';
-$txt['mboards_order_child_of'] = 'Sub-board of';
-$txt['mboards_order_in_category'] = 'In category';
-$txt['mboards_current_position'] = 'Current Position';
+$txt['mboards_order_before'] = 'Pre';
+$txt['mboards_order_child_of'] = 'Potforum';
+$txt['mboards_order_in_category'] = 'U kategoriji';
+$txt['mboards_current_position'] = 'Trenutna pozicija';
 $txt['no_valid_parent'] = 'Board %1$s does not have a valid parent. Use the \'find and repair errors\' function to fix this.';
 
-$txt['mboards_recycle_disabled_delete'] = 'Note: You must select an alternative recycle bin board or disable recycling before you can delete this board.';
+$txt['mboards_recycle_disabled_delete'] = 'Pažnja:Morate odabrati neki drugi forum kao korpu za otpatke foruma ili  zabraniti preusmeravanje pre nego što ga obrišete.';
 
-$txt['mboards_settings_desc'] = 'Edit general board and category settings.';
-$txt['groups_manage_boards'] = 'Membergroups allowed to manage boards and categories';
-$txt['mboards_settings_submit'] = 'Save';
-$txt['recycle_enable'] = 'Enable recycling of deleted topics';
-$txt['recycle_board'] = 'Board for recycled topics';
+$txt['mboards_settings_desc'] = 'Izmenite opšta podešavanja kategorija i foruma.';
+$txt['groups_manage_boards'] = 'Grupe članova kojima je dozvoljeno da upravljaju forumima i kategorijama';
+$txt['mboards_settings_submit'] = 'Sačuvaj';
+$txt['recycle_enable'] = 'Omogući recikliranje obrisanih tema';
+$txt['recycle_board'] = 'Forum za reciklirane teme';
 $txt['redirect_board_desc'] = 'A board that redirects users if they visit it';
-$txt['recycle_board_unselected_notice'] = 'You have enabled the recycling of topics without specifying a board to place them in. This feature will not be enabled until you specify a board to place recycled topics into.';
+$txt['recycle_board_unselected_notice'] = 'Uključili ste reciklažu tema bez navođenja foruma gde ćete ih smestiti. Ova funkcija neće biti omogućena sve dok ne navedete forum gde ćete smestiti reciklirane teme.';
 $txt['boardindex_max_depth'] = 'Maximum depth of sub-boards to check for new posts, etc.';
-$txt['countChildPosts'] = 'Count sub-board\'s posts in parent\'s totals';
-$txt['allow_ignore_boards'] = 'Allow boards to be ignored';
-$txt['deny_boards_access'] = 'Enable the option to deny board access based on membergroup';
-$txt['boardsaccess_option_desc'] = 'For each permission you can choose \'Allow\' (A), \'Disallow\' (X), or <span class="alert">\'Deny\' (D)</span>.<br><br>If you deny access, any member - (including moderators) - in that group will be denied access.<br>For this reason, you should set deny carefully, only when <strong>necessary</strong>. Disallow, on the other hand, denies unless otherwise granted.';
+$txt['countChildPosts'] = 'Ubroj poruke u potforumima u broj roditeljskog foruma';
+$txt['allow_ignore_boards'] = 'Dozvoli forumima da budu ignorisani';
+$txt['deny_boards_access'] = 'Omogućite opciju da zabranite pristup forumu na osnovu članstva u grupi';
+$txt['boardsaccess_option_desc'] = 'Za svaku dozvolu možete odabrati \'Dozvoli\' (D), \'Ignoriši\' (I), ili <span class="alert">\'Zabrani\' (Z)</span>.<br /><br />Ako zabranite pristup, bilo kojim članovima - (uključujući urednike) - u toj grupi će biti zabranjen pristup.<br />Iz tog razloga, trebalo bi da podešavate pažljivo, samo kad je <strong>neophodno</strong>. Ignoriši, s druge strane, zabranjuje osim ako nije drugačije određeno. ';
 
-$txt['mboards_select_destination'] = 'Select destination for board \'<strong>%1$s</strong>\'';
-$txt['mboards_cancel_moving'] = 'Cancel moving';
-$txt['mboards_move'] = 'move';
+$txt['mboards_select_destination'] = 'Izaberite odredište za forum \'<strong>%1$s</strong>\'';
+$txt['mboards_cancel_moving'] = 'Otkaži premeštanje';
+$txt['mboards_move'] = 'Premesti';
 
-$txt['mboards_no_cats'] = 'There are currently no categories or boards configured.';
+$txt['mboards_no_cats'] = 'Trenutno ne postoje konfigurisane kategorije ili forumi.';
 
 ?>
