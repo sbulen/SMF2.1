@@ -1,0 +1,205 @@
+<?php
+// Version: 2.1 RC3; ManagePaid
+
+global $boardurl;
+
+// Some payment gateways need language specific information.
+$txt['lang_paypal'] = 'NO';
+
+// Symbols.
+$txt['usd_symbol'] = '$%1.2f';
+$txt['eur_symbol'] = '&euro;%1.2f';
+$txt['gbp_symbol'] = '&pound;%1.2f';
+$txt['cad_symbol'] = 'C$%1.2f';
+$txt['aud_symbol'] = 'A$%1.2f';
+
+$txt['usd'] = 'USD ($)';
+$txt['eur'] = 'EURO (&euro;)';
+$txt['gbp'] = 'GBP (&pound;)';
+$txt['cad'] = 'CAD (C$)';
+$txt['aud'] = 'AUD (A$)';
+$txt['other'] = 'Other';
+
+$txt['paid_username'] = 'Brukernavn';
+
+$txt['paid_subscriptions_desc'] = 'Fra denne seksjonen kan du legge til, fjerne og redigere metoder for betalingsabonnement på forumet.';
+$txt['paid_subs_settings'] = 'Innstillinger';
+$txt['paid_subs_settings_desc'] = 'Herfra kan du redigere betalingsmetoder tilgjengelige for brukerne.';
+$txt['paid_subs_view'] = 'Vis abonnementer';
+$txt['paid_subs_view_desc'] = 'Fra denne seksjonen kan du se alle abonnementene du har tilgjengelig.';
+
+// Setting type strings.
+$txt['paid_enabled'] = 'Aktiver betalingsabonnementer';
+$txt['paid_enabled_desc'] = 'Dette må være huket av for at betalingsabonnementer skal kunne brukes på forumet.';
+$txt['paid_email'] = 'Send varslinger på e-post';
+$txt['paid_email_desc'] = 'Informer administrator når et abonnement automatisk endres.';
+$txt['paid_email_to'] = 'E-post som korrespondanse';
+$txt['paid_email_to_desc'] = 'Kommaseparert liste med e-postadresser hvor det skal sendes varslinger på e-post.';
+$txt['paidsubs_test'] = 'Aktiver testmodus';
+$txt['paidsubs_test_desc'] = 'Dette setter betalingsabonnementer i &quot;testmodus&quot; som vil, der det er mulig, bruk sandkasse betalingsmetoder hos paypal osv. Ikke aktiver dette med mindre du vet hva du gjør!';
+$txt['paidsubs_test_confirm'] = 'Er du sikker på at du vil aktivere testmodus?';
+$txt['paid_email_no'] = 'Ikke send noen varslinger';
+$txt['paid_email_error'] = 'Informere vis abonnement svikter';
+$txt['paid_email_all'] = 'Informere om alle automatiske abonnementsendringer';
+$txt['paid_currency'] = 'Velg valuta';
+$txt['paid_currency_code'] = 'Valutakode';
+$txt['paid_currency_code_desc'] = 'Kode som brukes av betalingsselskapet';
+$txt['paid_currency_symbol'] = 'Symbol brukt av betalingsmetoden';
+$txt['paid_currency_symbol_desc'] = 'Bruk \'%1.2f\' for å angi hvor tallene skal være, for eksempel $%1.2f, %1.2fDM osv';
+$txt['paid_settings_save'] = 'Lagre';
+
+$txt['paypal_email'] = 'Paypal e-post adresse';
+$txt['paypal_email_desc'] = 'La stå tomt hvis du ikke ønsker å bruke paypal.';
+$txt['paypal_additional_emails'] = 'Primær PayPal epost-adresse';
+$txt['paypal_additional_emails_desc'] = 'Hvis forskjellig (for "business" konto)';
+$txt['paypal_sandbox_email'] = 'PayPal test e-post adresse';
+$txt['paypal_sandbox_email_desc'] = 'Kan være blank om test-modus er slått av eller du ikke bruker PayPal';
+
+// argument(s): $boardurl
+$txt['paid_note'] = '<strong class="alert">Note:</strong><br>
+SMF currently supports <strong>PayPal</strong> as the installed payment method.<br>
+	&nbsp;&nbsp;&bull;&nbsp;&nbsp;It is not necessary to enable IPN in your PayPal account; but if you do, the forum will receive payment notifications for all payments made to your account, and this will generate Paid Subscriptions errors for payments that are not subscription related.<br>
+	&nbsp;&nbsp;&bull;&nbsp;&nbsp;You must have a business or premier account to use recurring payments.<br>
+	&nbsp;&nbsp;&bull;&nbsp;&nbsp;You must provide your primary PayPal email address for validation purposes.<br><br>
+
+If you install a different payment gateway, you may need to set up a return URL for payment notification.   For all payment types, this return URL should be set as:<br><br>
+	&nbsp;&nbsp;&bull;&nbsp;&nbsp;<strong>%1$s/subscriptions.php</strong><br><br>
+You can normally find it in your customer panels, usually under the term &quot;Return URL&quot; or &quot;Callback URL&quot;.<br><br><br>';
+
+// View subscription strings.
+$txt['paid_name'] = 'Navn';
+$txt['paid_status'] = 'Status';
+$txt['paid_cost'] = 'Pris';
+$txt['paid_duration'] = 'Varighet';
+$txt['paid_active'] = 'Aktiv';
+$txt['paid_pending'] = 'Ventende betaling';
+$txt['paid_finished'] = 'Fullført';
+$txt['paid_total'] = 'Totalt';
+$txt['paid_is_active'] = 'Aktivert';
+$txt['paid_none_yet'] = 'Du har ikke satt opp noen abonnementer ennå.';
+$txt['paid_payments_pending'] = 'Ventende betalinger';
+$txt['paid_order'] = 'Bestilling';
+
+$txt['yes'] = 'Ja';
+$txt['no'] = 'Nei';
+
+// Add/Edit/Delete subscription.
+$txt['paid_add_subscription'] = 'Legg til nytt abonnement';
+$txt['paid_edit_subscription'] = 'Rediger abonnement';
+$txt['paid_delete_subscription'] = 'Slett abonnement';
+
+$txt['paid_mod_name'] = 'Navn';
+$txt['paid_mod_desc'] = 'Beskrivelse';
+$txt['paid_mod_reminder'] = 'Send påminnelses e-post';
+$txt['paid_mod_reminder_desc'] = 'Påminnelse x dager før abonnementet utløper. (0 for å deaktivere)';
+$txt['paid_mod_email'] = 'E-post som skal sendes ved ferdigstillelse';
+$txt['paid_mod_email_desc'] = 'Hvor {NAME} er medlemmets navn; {FORUM} er navnet på ditt forum. Emne på e-posten bør være på første linje. Blank for ingen e-postvarsling.';
+$txt['paid_mod_cost_usd'] = 'Pris (USD)';
+$txt['paid_mod_cost_eur'] = 'Pris (EUR)';
+$txt['paid_mod_cost_gbp'] = 'Pris (GBP)';
+$txt['paid_mod_cost_cad'] = 'Kost (CAD)';
+$txt['paid_mod_cost_aud'] = 'Kost (AUD)';
+$txt['paid_mod_cost_blank'] = 'La dette stå tomt for å ikke tilby denne valutaen.';
+$txt['paid_mod_span'] = 'Lengde på abonnementet';
+$txt['paid_mod_span_days'] = 'Dager';
+$txt['paid_mod_span_weeks'] = 'Uker';
+$txt['paid_mod_span_months'] = 'Måneder';
+$txt['paid_mod_span_years'] = 'År';
+$txt['paid_mod_active'] = 'Aktiv';
+$txt['paid_mod_active_desc'] = 'Et abonnement må være aktiv for at nye medlemmer skal kunne delta.';
+$txt['paid_mod_prim_group'] = 'Hovedgruppe etter abonnementet';
+$txt['paid_mod_prim_group_desc'] = 'Hovedgruppe for brukeren når de abonnerer.';
+$txt['paid_mod_add_groups'] = 'Tilleggsgrupper etter abonnementet';
+$txt['paid_mod_add_groups_desc'] = 'Flere grupper å legge brukeren inn i etter å ha blitt abonnement.';
+$txt['paid_mod_no_group'] = 'Ikke endre';
+$txt['paid_mod_edit_note'] = 'Merk at da denne gruppen har eksisterende abonnenter, gruppeinnstillingene kan ikke endres!';
+$txt['paid_mod_delete_warning'] = '<strong>ADVARSEL</strong><br /><br />Hvis du sletter dette abonnementet, vil alle brukere som abonnerer, miste sine rettigheter gitt av dette abonnementet. Med mindre du er sikker på at du vil gjøre dette er det anbefalt at du bare deaktivere et abonnement i stedet for å slette det.<br />';
+$txt['paid_mod_repeatable'] = 'Tillater brukeren å automatisk fornye dette abonnementet';
+$txt['paid_mod_fixed_price'] = 'Abonnement på fastpris og periode';
+$txt['paid_mod_flexible_price'] = 'Abonnement på forskjellig varighet og pris';
+$txt['paid_mod_price_breakdown'] = 'Variabel pris';
+$txt['paid_mod_price_breakdown_desc'] = 'Her definerer du hvor mye et abonnement skal koste avhenger av perioden de abonnerer på. For eksempel kan det koste 10 kr å abonnerer i en måned, men bare 100 kr for et år. Hvis du ikke ønsker å definere en pris for en bestemt tidsperiode, la det stå tomt.';
+$txt['flexible'] = 'Variabel';
+
+$txt['paid_per_day'] = 'Pris per dag';
+$txt['paid_per_week'] = 'Pris per uke';
+$txt['paid_per_month'] = 'Pris per måned';
+$txt['paid_per_year'] = 'Pris per år';
+$txt['day'] = 'Dag';
+$txt['week'] = 'Uke';
+$txt['month'] = 'Måned';
+$txt['year'] = 'År';
+
+// View subscribed users.
+$txt['viewing_users_subscribed'] = 'Viser brukere';
+$txt['view_users_subscribed'] = 'Viser brukere som abonnerer på: &quot;%1$s&quot;';
+$txt['no_subscribers'] = 'Det er for tiden ingen abonnenter til dette abonnementet!';
+$txt['add_subscriber'] = 'Legg til ny bruker';
+$txt['edit_subscriber'] = 'Rediger bruker';
+$txt['delete_selected'] = 'Slett valgte';
+$txt['complete_selected'] = 'Fullfør valgte';
+
+// @todo These strings are used in conjunction with JavaScript. Use numeric entities.
+$txt['delete_are_sure'] = 'Er du sikker på at du vil slette alle registreringer på det valgte abonnementet?';
+$txt['complete_are_sure'] = 'Er du sikker på at du vil avslutte det valgte abonnementet?';
+
+$txt['start_date'] = 'Startdato';
+$txt['end_date'] = 'Sluttdato';
+$txt['start_date_and_time'] = 'Startdato og tid';
+$txt['end_date_and_time'] = 'Sluttdato og tid';
+$txt['edit'] = 'REDIGER';
+$txt['one_username'] = 'Skriv kun inn ett brukernavn.';
+$txt['minute'] = 'Minutt';
+$txt['error_member_not_found'] = 'Angitte medlem ble ikke funnet';
+$txt['member_already_subscribed'] = 'Dette medlemmet abonnerer allerede på dette abonnementet. Vennligst rediger medlemmets eksisterende abonnement.';
+$txt['search_sub'] = 'Finn bruker';
+
+// Make payment.
+$txt['paid_confirm_payment'] = 'Bekreft betalingt';
+$txt['paid_confirm_desc'] = 'For å fortsette til betalingen, sjekk detaljene under og trykk &quot;Bestill&quot;';
+$txt['paypal'] = 'Paypal';
+$txt['paid_confirm_paypal'] = 'For å betale med <a href="https://www.paypal.com">PayPal</a> vennligst klikk på knappen under. Du vil bli sendt til PayPal-området for betaling.';
+$txt['paid_paypal_order'] = 'Bestill med  PayPal';
+$txt['paid_done'] = 'Betaling fullført';
+$txt['paid_done_desc'] = 'Takk for din bestilling. Når transaksjonen er verifisert vil abonnementet bli aktivert.';
+$txt['paid_sub_return'] = 'Tilbake til abonnementer';
+$txt['paid_current_desc'] = 'Nedenfor er en liste over alle dine nåværende og tidligere abonnementer. For å fornye et eksisterende abonnement bare velge fra listen over.';
+$txt['paid_admin_add'] = 'Legg til dette abonnementet';
+
+$txt['paid_not_set_currency'] = 'Du har ikke angitt valuta ennå. Vennligst gjør det på <a href="%1$s">Innstillinger</a> før du fortsetter.';
+$txt['paid_no_cost_value'] = 'Du må angi en pris og varighet på abonnementet.';
+$txt['paid_invalid_duration'] = 'Du må legge inn en gyldig varighet for abonnementet,';
+$txt['paid_invalid_duration_D'] = 'Abonnementslengde målt i dager kan bare være 1 til 90 dager. Hvis du vil ha et lengre abonnement bør du bruke uker, måneder eller år.';
+$txt['paid_invalid_duration_W'] = 'Abonnementslengde målt i uker kan være 1 til 52 uker. For lengre abonnement bør du bruke måneder eller år.';
+$txt['paid_invalid_duration_M'] = 'Abonnementslengde målt i måneder kan være 1 til 24 måneder. For lengre abonnement bør du bruke år.';
+$txt['paid_invalid_duration_Y'] = 'Abonnementslengde målt i år kan være minimum 1 og maksimum 5 år.';
+$txt['paid_all_freq_blank'] = 'Du må angi en pris for minst ett av de fire varighetene.';
+
+// Some error strings.
+$txt['paid_no_data'] = 'Ingen gyldige data ble sendt til skriptet.';
+
+$txt['paypal_could_not_connect'] = 'Kunne ikke koble til PayPal serveren';
+$txt['paid_sub_not_active'] = 'Dette abonnementet tar ikke opp nye brukere!';
+$txt['paid_disabled'] = 'Betalte abonnementer er for øyeblikket deaktivert!';
+$txt['paid_unknown_transaction_type'] = 'Ukjent transaksjonstype .';
+$txt['paid_empty_member'] = 'Betalingsbehandler kunne ikke gjenopprette medlems-ID';
+$txt['paid_could_not_find_member'] = 'Betalingsbehandler kunne ikke finne medlem med ID: %1$d';
+$txt['paid_count_not_find_subscription'] = 'Betalingsbehandler kunne ikke finne abonnement for medlems-ID: %1$s, abonnements-ID: %2$s';
+$txt['paid_count_not_find_subscription_log'] = 'Betalingsbehandler kunne ikke finne loggoppføring for medlems-ID: %1$s, abonnements-ID: %2$s';
+$txt['paid_count_not_find_outstanding_payment'] = 'Kunne ikke finne utestående betalingsoppføring for medlems-ID: %1$s, abonnements-ID: %2$s så ignorerer';
+$txt['paid_admin_not_setup_gateway'] = 'Beklager, men administrator er ikke ferdig med å sette opp abonnement. Vennligst sjekk tilbake senere.';
+$txt['paid_make_recurring'] = 'Gjør dette til en periodisk betaling';
+
+$txt['subscriptions'] = 'Abonnementer';
+$txt['subscription'] = 'Abonnement';
+$txt['paid_subs_desc'] = 'Nedenfor er en liste over alle abonnementer som er tilgjengelig på dette forumet.';
+$txt['paid_subs_none'] = 'Det er ingen abonnement tilgjengelig!';
+
+$txt['paid_current'] = 'Eksisterende abonnementer';
+$txt['pending_payments'] = 'Ventende betalinger';
+$txt['pending_payments_desc'] = 'Dette medlemmet har forsøkt å gjøre følgende betaling for dette abonnementet, men bekreftelsen er ikke mottatt av forumet. Hvis du er sikker på at betalingen er mottatt klikk på &quot;Godta&quot; for å starte abonnementet. Alternativt kan du klikke på &quot;Fjern&quot; for å fjerne alle referanser til betalingen.';
+$txt['pending_payments_value'] = 'Verdi';
+$txt['pending_payments_accept'] = 'Godta';
+$txt['pending_payments_remove'] = 'Slett';
+
+?>
