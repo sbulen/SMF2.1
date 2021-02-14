@@ -1,7 +1,7 @@
 <?php
 // Version: 2.1 RC3; Agreement
 
-$txt['agreement'] = 'Sporazum o registraciji';
+$txt['agreement'] = 'Registration Agreement';
 $txt['agreement_updated'] = 'Updated Registration Agreement';
 $txt['agreement_updated_desc'] = 'You must accept the terms of the registration agreement in order to continue using the forum.';
 $txt['agreement_accepted'] = 'You accepted the terms of this agreement on %1$s.';
