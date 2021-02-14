@@ -1,0 +1,242 @@
+<?php
+// Version: 2.1 RC3; ManageMaintenance
+
+$txt['repair_zero_ids'] = 'Fant emner og/eller innlegg med ID 0.';
+$txt['repair_missing_topics'] = 'Innlegg #%1$d er i et ikke eksisterende emne med ID #%2$d.';
+$txt['repair_missing_messages'] = 'Emnet #%1$d inneholder ingen innlegg.';
+$txt['repair_topic_wrong_first_id'] = 'Emne #%1$d har første meldings-ID %2$d, hvilket er feil.';
+$txt['repair_topic_wrong_last_id'] = 'Emne #%1$d har siste meldings-ID %2$d, hvilket er feil.';
+$txt['repair_topic_wrong_replies'] = 'Emne #%1$d har feil antall svar, %2$d.';
+$txt['repair_topic_wrong_unapproved_number'] = 'Emne #%1$d har feil antall ikke-godkjente innlegg, %2$d.';
+$txt['repair_topic_wrong_approval'] = 'Emne #%1$d har feil godkjennings-flagg satt.';
+$txt['repair_missing_boards'] = 'Emnet %1$d er i forumet %2$d, dette mangler.';
+$txt['repair_missing_categories'] = 'Forumet #%1$d hører til kategori med ID %2$d, men denne mangler.';
+$txt['repair_missing_posters'] = 'Innlegget med ID #%1$d ble skrevet av medlemmet med ID #%2$d, som nå ikke finnes.';
+$txt['repair_missing_parents'] = 'Forum #%1$d er underordnet av forum #%2$d, som mangler.';
+$txt['repair_missing_polls'] = 'Emnet #%1$d er bundet sammen med ikke-eksisterende avstemninga med ID %2$d.';
+$txt['repair_polls_missing_topics'] = 'Avstemning #%1$d er knyttet til ikke-eksisterende emne #%2$d.';
+$txt['repair_poll_options_missing_poll'] = 'Spørreundersøkelse #%1$d har %2$d avstemningsvalg satt, men ingen avstemning vedlagt.';
+$txt['repair_missing_calendar_topics'] = 'Hendelsen med ID #%1$d er bundet sammen til emnet #%2$d, men dette mangler.';
+$txt['repair_missing_log_topics'] = 'Emnet #%1$d er markert som lest av et eller flere medlem, men dette eksisterer ikke.';
+$txt['repair_missing_log_topics_members'] = 'Medlemmet med ID #%1$d har markert et eller flere emner som lest, men eksisterer ikke.';
+$txt['repair_missing_log_boards'] = 'Forumet med ID #%1$d er markert som lest for et eller flere medlem, men dette eksisterer ikke.';
+$txt['repair_missing_log_boards_members'] = 'Medlemmet med ID #%1$d har markert et eller flere fora som lest, men eksisterer ikke.';
+$txt['repair_missing_log_mark_read'] = 'Forumet med ID #%1$d er markert som lest for et eller flere medlem, men dette eksisterer ikke.';
+$txt['repair_missing_log_mark_read_members'] = 'Medlemmet med ID #%1$d har markert et eller flere fora som lest, men eksisterer ikke.';
+$txt['repair_missing_pms'] = 'PM med ID #%1$d ble sendt til et eller flere medlem, men eksisterer ikke.';
+$txt['repair_missing_recipients'] = 'Medlemmet med ID #%1$d hat mottatt en eller flere PM, men eksisterer ikke.';
+$txt['repair_missing_senders'] = 'PM med ID #%1$d ble send av medlemmet med ID %2$d, som ikke eksisterer.';
+$txt['repair_missing_notify_members'] = 'Varsling har blitt ønsket av medlemmet med ID #%1$d, som ikke eksisterer.';
+$txt['repair_missing_cached_subject'] = 'Tittelen på emnet %1$d er ikke lagret i tittelminnet.';
+$txt['repair_missing_topic_for_cache'] = 'Det lagrete ordet \'%1$s\' er bundet sammen med et ikke-eksisterende emne.';
+$txt['repair_missing_log_poll_member'] = 'Avstemningen med ID %1$d har mottatt en stemme fra medlemmet med ID %2$d , som nå mangler.';
+$txt['repair_missing_log_poll_vote'] = 'En stemme ble avgitt av medlemmet med ID %1$d til en ikke-eksisterende avstemning med ID %2$d.';
+$txt['repair_missing_thumbnail_parent'] = 'En miniatyr med navnet %1$s eksisterer, men den tilhører ingen.';
+$txt['repair_report_missing_comments'] = 'Rapporten #%1$d på emnet: &quot;%2$s&quot; inneholder ingen kommentarer.';
+$txt['repair_comments_missing_report'] = 'Kommentaren i rapport #%1$d sendt inn av %2$s har ingen relaterte rapporter.';
+$txt['repair_group_request_missing_member'] = 'En gruppeforespørsel eksisterer fortsatt for slettet medlem #%1$d.';
+$txt['repair_group_request_missing_group'] = 'En gruppeforespørsel eksisterer fortsatt for den slettede gruppen #%1$d.';
+
+$txt['repair_currently_checking'] = 'Kontrollerer: &quot;%1$s&quot;';
+$txt['repair_currently_fixing'] = 'Reparerer: &quot;%1$s&quot;';
+$txt['repair_operation_zero_topics'] = 'Emner med id_topic feilaktig satt til null';
+$txt['repair_operation_zero_messages'] = 'Innlegg med id_msg feilaktig satt til null';
+$txt['repair_operation_missing_topics'] = 'Innlegg mangler emneoppføringer';
+$txt['repair_operation_missing_messages'] = 'Emner uten noen innlegg';
+$txt['repair_operation_stats_topics'] = 'Emner med feil i første eller siste melding';
+$txt['repair_operation_stats_topics2'] = 'Emner med feil antall svar';
+$txt['repair_operation_stats_topics3'] = 'Emner med feil antall ikke-godkjente innlegg';
+$txt['repair_operation_missing_boards'] = 'Emner i et ikke-eksisterende forum';
+$txt['repair_operation_missing_categories'] = 'Forum i en kategori som ikke finnes ';
+$txt['repair_operation_missing_posters'] = 'Innlegg knyttet medlemmer som ikke finnes';
+$txt['repair_operation_missing_parents'] = 'Underforum som ikke har overordnet forum';
+$txt['repair_operation_missing_polls'] = 'Emner knyttet til avstemninger som ikke finnes';
+$txt['repair_operation_missing_calendar_topics'] = 'Hendelser knyttet til ikke-eksisterende emner';
+$txt['repair_operation_missing_log_topics'] = 'Emnelogger knyttet til ikke-eksisterende emner';
+$txt['repair_operation_missing_log_topics_members'] = 'Emnelogger knyttet til ikke-eksisterende medlemmer';
+$txt['repair_operation_missing_log_boards'] = 'Forumlogger knyttet til ikke-eksisterende Forumer';
+$txt['repair_operation_missing_log_boards_members'] = 'Forumlogger knyttet til ikke-eksisterende medlemmer';
+$txt['repair_operation_missing_log_mark_read'] = 'Data marker som lest er knyttet til ikke-eksisterende Forumer ';
+$txt['repair_operation_missing_log_mark_read_members'] = 'Data marker som lest er knyttet til ikke-eksisterende medlemmer';
+$txt['repair_operation_missing_pms'] = 'Mottakere av personlige meldinger der første melding mangler';
+$txt['repair_operation_missing_recipients'] = 'Mottakere av personlige meldinger knyttet til et medlem som ikke finnes';
+$txt['repair_operation_missing_senders'] = 'Personlige meldinger knyttet til en ikke-eksisterende medlem';
+$txt['repair_operation_missing_notify_members'] = 'Varslingslogger knyttet til en ikke-eksisterende medlem';
+$txt['repair_operation_missing_cached_subject'] = 'Emner som mangler mellomlagrede søkeresultater';
+$txt['repair_operation_missing_topic_for_cache'] = 'Mellomlagrede søkeresultater knyttet til ikke-eksisterende medlemmer';
+$txt['repair_operation_missing_member_vote'] = 'Avstemninger knyttet til ikke-eksisterende medlemmer';
+$txt['repair_operation_missing_log_poll_vote'] = 'Avstemninger knyttet til ikke-eksisterende avstemning';
+$txt['repair_operation_report_missing_comments'] = 'Emnerapporter uten en kommentar';
+$txt['repair_operation_comments_missing_report'] = 'Rapportkommentarer som mangler emnerapport';
+$txt['repair_operation_group_request_missing_member'] = 'Gruppeforespørsler der medlem som spør ikke finnes';
+$txt['repair_operation_group_request_missing_group'] = 'Gruppeforespørsler for en ikke-eksisterende gruppe';
+
+$txt['salvaged_category_name'] = 'Gjenopprettingsområdet';
+$txt['salvaged_category_error'] = 'Kunne ikke opprette kategorien for Gjenopprettingsområdet!';
+$txt['salvaged_category_description'] = 'Forum opprettet for gjenskapte innlegg.';
+$txt['salvaged_board_name'] = 'Gjenopprettet emner';
+$txt['salvaged_board_description'] = 'Emner opprettet for innlegg med ikke-eksisterende emner';
+$txt['salvaged_board_error'] = 'Kunne ikke opprette forum for Gjenoppretteet emner!';
+$txt['salvaged_poll_topic_name'] = 'Gjenopprettet avstemninger';
+$txt['salvaged_poll_message_body'] = 'Denne avstemning ble funnet uten et emne.';
+$txt['salvaged_poll_question'] = 'Denne spørreundersøkelsen ble funnet uten et spørsmål.';
+
+$txt['database_optimize'] = 'Optimaliser databasen';
+$txt['database_numb_tables'] = 'Din database inneholder %1$d tabeller.';
+$txt['database_optimize_attempt'] = 'Prøver å optimalisere databasen...';
+$txt['database_optimizing'] = 'Optimaliserer %1$s... %2$01.2f kb optimalisert.';
+$txt['database_already_optimized'] = 'Alle tabellene ble optimalisert.';
+$txt['database_opimize_unneeded'] = 'Det var ikke nødvendig å optimalisere noen tabeller.';
+$txt['database_optimized'] = ' tabell(er) optimaliset.';
+$txt['database_no_id'] = 'har en ikke-eksisterende medlems-ID';
+
+$txt['apply_filter'] = 'Aktiver filtrering';
+$txt['applying_filter'] = 'Aktiverer filtrering';
+$txt['filter_only_member'] = 'Vis kun feilmeldinger fra dette medlemmet';
+$txt['filter_only_ip'] = 'Vis kun feilmeldinger fra denne IP adressen';
+$txt['filter_only_session'] = 'Vis kun feilmeldinger fra denne iden';
+$txt['filter_only_url'] = 'Vis kun feilmeldinger for denne adressen';
+$txt['filter_only_message'] = 'Vis kun feilmeldinger med samme melding';
+$txt['session'] = 'ID';
+$txt['error'] = 'Feil';
+$txt['error_url'] = 'Adresse til problemside';
+$txt['error_message'] = 'Feilmelding';
+$txt['error_file'] = 'Fil';
+$txt['error_line'] = 'Linje';
+$txt['clear_filter'] = 'Deaktiver filtrering';
+$txt['remove_selection'] = 'Fjern valgte';
+$txt['remove_filtered_results'] = 'Fjern alle filtrerte treff';
+$txt['sure_about_errorlog_remove'] = 'Er du sikker på at du vil fjerne alle feilmeldingene?';
+$txt['remove_selection_confirm'] = 'Er du sikker på at du vil slette de valgte oppføringene?';
+$txt['remove_filtered_results_confirm'] = 'Er du sikker på at du vil slette de filtrerte oppføringene?';
+$txt['reverse_direction'] = 'Sorter feilmeldingene i omvendt rekkefølge';
+$txt['error_type'] = 'Type feil';
+$txt['filter_only_type'] = 'Bare vise feil av denne typen';
+$txt['filter_only_file'] = 'Bare vise feilene fra denne filen';
+$txt['apply_filter_of_type'] = 'Bruk filter av type';
+$txt['backtrace_title'] = 'Tilbakesporingsinformasjon';
+// argument(s): error message, function, filename, line nr, filehash, $scripturl
+$txt['backtrace_info'] = '<b>#%1$d</b>: %2$s()<br>Called from <a href="%6$s?action=admin;area=logs;sa=errorlog;file=%5$s;line=%4$d" onclick="return reqWin(this.href, 600, 480, false);">%3$s on line %4$d</a>';
+
+$txt['errortype_all'] = 'Alle feil';
+$txt['errortype_general'] = 'Generelt';
+$txt['errortype_general_desc'] = 'Generelle feil som ikke er kategorisert';
+$txt['errortype_critical'] = '<span class="red">Kritisk</span>';
+$txt['errortype_critical_desc'] = 'Kritiske feil. Disse bør håndteres så raskt som mulig. Ignoreres disse feilene kan det resultere i at ditt forum feiler og at det kan oppstå sikkerhetsproblem.';
+$txt['errortype_database'] = 'Database-innstillinger';
+$txt['errortype_database_desc'] = 'Feil forårsaket av feil spørringer. Disse bør bli sett på og rapporteres til SMF.';
+$txt['errortype_undefined_vars'] = 'Ikke definert';
+$txt['errortype_undefined_vars_desc'] = 'Feil forårsaket ved bruk av udefinerte variabler, indekser, eller offsets.';
+$txt['errortype_ban'] = 'Utestengelse';
+$txt['errortype_ban_desc'] = 'En logg over utestengte brukere som prøver å få tilgang til forumet.';
+$txt['errortype_template'] = 'Mal';
+$txt['errortype_template_desc'] = 'Feil knyttet til lasting av maler.';
+$txt['errortype_user'] = 'Bruker';
+$txt['errortype_user_desc'] = 'Feil som skyldes brukerfeil. Inkluderer feil passord, prøver å logge inn når utestengt, og prøver å gjøre en handling som de ikke har tillatelse til.';
+$txt['errortype_cron'] = 'Cron';
+$txt['errortype_cron_desc'] = 'Feil som følge av bakgrunnsoppgaver.';
+$txt['errortype_paidsubs'] = 'Betalte abbonnement';
+$txt['errortype_paidsubs_desc'] = 'Feil fra betalte abonnement, som kan inkludere feilede betalinger.';
+$txt['errortype_backup'] = 'Sikkerhetskopier';
+$txt['errortype_backup_desc'] = 'Feil under sikkerhetskopiering, som vanligvis er meldinger som forklarer hvorfor prosessen feilet.';
+$txt['errortype_login'] = 'Innlogginger';
+$txt['errortype_login_desc'] = 'Feil under mislykkede innlogginger, eller "rå makt" forsøk på inntrengning.';
+
+$txt['maintain_recount'] = 'Tell på nytt alle forumets totaler og statistikk.';
+$txt['maintain_recount_info'] = 'Dersom antall svar på et emne eller antall meldinger i innboksen din er feil, vil denne funksjonen oppdatere alle tellere og statistikk for deg.';
+$txt['maintain_errors'] = 'Finn og reparer alle feil';
+$txt['maintain_errors_info'] = 'Dersom, for eksempel innlegg eller emner er blitt borte etter en serverkrasj, kan denne funksjonen hjelp til å finne dem igjen.';
+$txt['maintain_logs'] = 'Tøm alle uinteressante logger';
+$txt['maintain_logs_info'] = 'Denne funksjonen vil tømme alle uviktig logger. Dette bør unngås med mindre noe er galt, men det gjør ingen skade.';
+$txt['maintain_cache'] = 'Empty SMF\'s cache';
+$txt['maintain_cache_info'] = 'This function will empty out the cache should you need it to be cleared.';
+$txt['maintain_optimize'] = 'Optimaliser alle tabellene';
+$txt['maintain_optimize_info'] = 'Denne oppgaven optimaliserer alle tabeller. Rydder i unødvendige oppføringer og tabellene blir dermed mindre i størrelse og ditt forum blir raskere!';
+$txt['maintain_version'] = 'Sjekk om alle filene er oppdaterte';
+$txt['maintain_version_info'] = 'Denne oppgaven utfører en detaljert versjonssjekk av alle forumets filer mot den offisielle listen over filer.';
+$txt['maintain_run_now'] = 'Utfør nå';
+$txt['maintain_return'] = 'Tilbake til \'Vedlikehold forumet\'';
+
+$txt['maintain_backup'] = 'Sikkerhetskopier databasen';
+$txt['maintain_backup_info'] = 'Last ned en sikkerhetskopi av databasen i tilfelle ett nødstilfelle.';
+$txt['maintain_backup_struct'] = 'Lagre tabellstrukturen.';
+$txt['maintain_backup_data'] = 'Lagre data i tabellene (det aller viktigste).';
+$txt['maintain_backup_gz'] = 'Komprimer filen med GZip.';
+$txt['maintain_backup_save'] = 'Last ned';
+
+$txt['maintain_old'] = 'Slett gamle innlegg';
+$txt['maintain_old_since_days1'] = 'Slett alle emner som har vært inaktive i ';
+$txt['maintain_old_since_days2'] = ' dager, som er:';
+$txt['maintain_old_nothing_else'] = 'Alle emner.';
+$txt['maintain_old_are_moved'] = 'Flyttet: emner.';
+$txt['maintain_old_are_locked'] = 'Stengte.';
+$txt['maintain_old_are_not_stickied'] = 'Men ikke telle de prioriterte emnene.';
+$txt['maintain_old_all'] = 'Alle fora (klikk for å velge bestemte forum)';
+$txt['maintain_old_choose'] = 'Spesifikk fora (klikk for å velge alle)';
+$txt['maintain_old_remove'] = 'Fjern nå';
+$txt['maintain_old_confirm'] = 'Er du virkelig sikker på at du vil slette gamle innlegg?-n-Dette kan ikke angres!';
+
+$txt['maintain_old_drafts'] = 'Fjern gamle utkast';
+$txt['maintain_old_drafts_days'] = 'Fjern alle utkast eldre enn';
+$txt['maintain_old_drafts_confirm'] = 'Er du sikker på at du vil slette gamle utkast?-n-Dette kan ikke angres!!';
+$txt['maintain_members'] = 'Fjern inaktive medlemmer';
+$txt['maintain_members_ungrouped'] = 'Ugrupperte medlemmer <span class="smalltext">(Medlemmer uten tildelte grupper)</span>';
+$txt['maintain_members_since1'] = 'Fjern alle medlemmene som ikke har';
+$txt['maintain_members_since2'] = 'for';
+$txt['maintain_members_since3'] = 'dager.';
+$txt['maintain_members_activated'] = 'aktivert sin konto';
+$txt['maintain_members_logged_in'] = 'logget inn';
+$txt['maintain_members_all'] = 'Alle medlemsgrupper';
+$txt['maintain_members_choose'] = 'Valgte grupper';
+$txt['maintain_members_confirm'] = 'Er du sikker på at du ønsker å slette disse medlemskontoene?-n-Dette kan ikke angres!';
+
+$txt['text_title'] = 'Konverter til TEXT';
+$txt['mediumtext_title'] = 'Konverter til MEDIUMTEXT';
+$txt['mediumtext_introduction'] = 'Standard tabell for meldinger kan inneholde innlegg opp til en størrelse på 65 535 tegn, for å kunne lagre større tekster må kolonnen konverteres til "MEDIUMTEXT". Det er også mulig å konvertere tilbake til TEXT (reduserer plassbeovet), men <strong>bare dersom</strong> ingen av innleggene i databasen overstige størrelsen på 65 535 tegn. Dette vil bli verifisert før konverteringen.';
+$txt['body_checking_introduction'] = 'Denne funksjonen vil konvertere kolonnen i databasen som inneholder meldingene til "TEXT" -format (er nå "MEDIUMTEXT"). Denne operasjonen reduserer størrelsen på databasen (1 byte per melding). Dersom noen meldinger lagret i databasen er lengre enn 65 535 tegn vil deler av teksten bli avkortet og den del av teksten går tapt.';
+$txt['exceeding_messages'] = 'Følgende meldinger er lengre enn 65 535 tegn, og vil bli avkortet under konverteringen:';
+$txt['exceeding_messages_morethan'] = 'Og andre %1$d ';
+$txt['convert_to_text'] = 'Ingen meldinger er lengre enn 65 535 tegn. Du kan trygt fortsette med konverteringen uten å miste noen del av teksten.';
+$txt['convert_to_suggest_text'] = 'Kolonnen i databasen som lagrer dine meldinger er for øyeblikket satt som MEDIUMTEXT, men den maksimale tillatte lengde satt for meldinger er lavere enn 65 535 tegn. Du kan frigjøre plass ved å konvertere kolonnen til TEXT.';
+
+$txt['entity_convert_title'] = 'Konverter HTML spesialtegn til UTF-8 versjoner';
+$txt['entity_convert_only_utf8'] = 'Databasen trenger å være på UTF-8 format før HTML spesialtegn kan konverteres til UTF-8 versjoner';
+$txt['entity_convert_introduction'] = 'Denne funksjonen vil konvertere alle tegn som er lagret i databasen som HTML spesialtegn, til UTF-8 versjoner. Dette er spesielt nyttig når du nettopp har konvertert ditt forum fra et tegnsett som ISO-8859-1 og non-standard tegn er brukt på forumet. Nettleseren sender dermed alle tegn som HTML spesial-tegn. For eksempel, HTML spesialtegnet &amp;#945; representerer den greske bokstaven &#945; (alfa). Konvertering av spesialtegn til UTF-8 vil forbedre søk og sortering av tekster og frigjøre lagringsplass.';
+$txt['entity_convert_proceed'] = 'Fortsett';
+
+// Move topics out.
+$txt['move_topics_maintenance'] = 'Flytt emner';
+$txt['move_topics_select_board'] = 'Velg forum';
+$txt['move_topics_from'] = 'Flytt emner fra';
+$txt['move_topics_to'] = 'til';
+$txt['move_topics_now'] = 'Flytt nå';
+$txt['move_topics_confirm'] = 'Er du sikker på at du vil flytte alle emnene fra &quot;%board_from%&quot; til &quot;%board_to%&quot;?';
+$txt['move_topics_older_than'] = 'Flytt emner ikke postet i de siste ';
+$txt['move_type_sticky'] = 'Festede emner';
+$txt['move_type_locked'] = 'Låste emner';
+$txt['move_zero_all'] = 'Legg inn 0 for å flytte alle emner';
+
+$txt['maintain_reattribute_posts'] = 'Tildel innlegg til brukerne igjen';
+$txt['reattribute_guest_posts'] = 'Overfør gjesteinnlegg opprettet med';
+$txt['reattribute_email'] = 'E-postadressen';
+$txt['reattribute_username'] = 'Brukernavnet';
+$txt['reattribute_current_member'] = 'Overfør innlegg til bruker';
+$txt['reattribute_increase_posts'] = 'Legg innlegg til brukers innleggstelling';
+$txt['reattribute'] = 'Tilordne igjen';
+// Don't use entities in the below string.
+$txt['reattribute_confirm'] = 'Er du sikker på at du ønsker å tilordne alle gjestinnlegg med type %type% med navnet "%find%" til medlem "%member_to%"?';
+$txt['reattribute_confirm_username'] = 'et brukernavn';
+$txt['reattribute_confirm_email'] = 'en e-postadresse';
+$txt['reattribute_cannot_find_member'] = 'Kunne ikke finne medlem å tilordne innlegg til.';
+
+$txt['maintain_recountposts'] = 'Telle innlegg på nytt';
+$txt['maintain_recountposts_info'] = 'Kjør denne vedlikeholdsoppgave for å oppdatere brukernes totale antall innlegg. Den vil telle alle (tellbare) innlegg opprettet av hver bruker, og deretter oppdaterer brukerens profil.';
+
+$txt['safe_mode_enabled'] = '<a href="https://php.net/manual/en/features.safe-mode.php">safe_mode</a> er aktivert på din server!<br />Sikkerhetskopier utført med dette verktøyet kan ikke anses som pålitelig! ';
+$txt['use_external_tool'] = 'Du bør vurdere å bruke et eksternt verktøy for å sikkerhetskopiere databasen, sikkerhetskopiering utført med dette verktøyet ikke regnes som 100% pålitelig.';
+$txt['zipped_file'] = 'Dersom du vil kan du lage en komprimert (zippet) sikkerhetskopi.';
+$txt['plain_text'] = 'Den beste metoden for å sikkerhetskopiere databasen er å lagre som en ren tekstfil, en komprimert sikkerhetskopi kan være upålitelig.';
+$txt['enable_maintenance1'] = 'På grunn av størrelsen på forumet, er det anbefalt å sette Forumet i "vedlikeholdsmodus" før du starter sikkerhetskopieringen.';
+$txt['enable_maintenance2'] = 'For å gå videre, på grunn av størrelsen på forumet, må du sette Forumet i "Vedlikeholdsmodus".';
+
+?>
