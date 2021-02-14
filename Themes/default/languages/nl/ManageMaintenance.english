@@ -1,0 +1,242 @@
+<?php
+// Version: 2.1 RC3; ManageMaintenance
+
+$txt['repair_zero_ids'] = 'Topics en/of berichten gevonden met topic- of bericht-ID van 0.';
+$txt['repair_missing_topics'] = 'Bericht #%1$d heeft een niet-bestaand onderwerp #%2$d.';
+$txt['repair_missing_messages'] = 'Onderwerp #%1$d bevat geen berichten.';
+$txt['repair_topic_wrong_first_id'] = 'Topic #%1$d heeft als eerste bericht ID %2$d, dit is onjuist.';
+$txt['repair_topic_wrong_last_id'] = 'Topic #%1$d heeft als laatste bericht ID %2$d, dit is onjuist.';
+$txt['repair_topic_wrong_replies'] = 'Topic #%1$d heeft een onjuist aantal reacties, %2$d.';
+$txt['repair_topic_wrong_unapproved_number'] = 'Topic #%1$d heeft een onjuist aantal niet-goedgekeurde berichten, %2$d.';
+$txt['repair_topic_wrong_approval'] = 'Topic #%1$d heeft een onjuiste goedkeuring instelling.';
+$txt['repair_missing_boards'] = 'Onderwerp #%1$d staat in board #%2$d, dat ontbreekt.';
+$txt['repair_missing_categories'] = 'Board #%1$d staat in de categorie #%2$d, die ontbreekt.';
+$txt['repair_missing_posters'] = 'Bericht #%1$d is gepost door lid #%2$d, dat niet bestaat.';
+$txt['repair_missing_parents'] = 'Board #%1$d is een subboard van een ontbrekend board, #%2$d.';
+$txt['repair_missing_polls'] = 'Topic #%1$d is gekoppeld aan niet-bestaaande poll #%2$d.';
+$txt['repair_polls_missing_topics'] = 'Poll #%1$d is gekoppeld aan een niet-bestaand topic, #%2$d.';
+$txt['repair_poll_options_missing_poll'] = 'Poll #%1$d heeft %2$d stem opties maar geen poll gekoppeld.';
+$txt['repair_missing_calendar_topics'] = 'Event #%1$d is tied to topic #%2$d, which is missing.';
+$txt['repair_missing_log_topics'] = 'Topic #%1$d is door &eacute;&eacute;n of meer mensen als gelezen gemarkeerd, maar het bestaat niet.';
+$txt['repair_missing_log_topics_members'] = 'Lid #%1$d heeft &eacute;&eacute;n of meer topics als gelezen gemarkeerd, maar bestaat niet.';
+$txt['repair_missing_log_boards'] = 'Board #%1$d is door &eacute;&eacute;n of meer mensen als gelezen gemarkeerd, maar bestaat niet.';
+$txt['repair_missing_log_boards_members'] = 'Lid #%1$d &eacute;&eacute;n of meer boards als gelezen gemarkeerd, maar bestaat niet.';
+$txt['repair_missing_log_mark_read'] = 'Board #%1$d is door &eacute;&eacute;n of meer mensen als gelezen gemarkeerd, maar bestaat niet.';
+$txt['repair_missing_log_mark_read_members'] = 'Lid #%1$d &eacute;&eacute;n of meer boards als gelezen gemarkeerd, maar bestaat niet.';
+$txt['repair_missing_pms'] = 'Persoonlijk bericht #%1$d is naar &eacute;&eacute;n of meer mensen verstuurd, maar bestaat niet.';
+$txt['repair_missing_recipients'] = 'Lid #%1$d heeft &eacute;&eacute;n of meer persoonlijke berichten ontvangen, maar bestaat niet.';
+$txt['repair_missing_senders'] = 'Personal message #%1$d was sent by member #%2$d, who does not exist.';
+$txt['repair_missing_notify_members'] = 'Notificates zijn aangevraagd door lid #%1$d dat niet bestaat.';
+$txt['repair_missing_cached_subject'] = 'Het onderwerp van topic #%1$d is momenteel niet opgeslagen in de onderwerpen-cache.';
+$txt['repair_missing_topic_for_cache'] = 'Het gecachete woord \'%1$s\' is gelinkt aan een niet-bestaand topic.';
+$txt['repair_missing_log_poll_member'] = 'Poll #%1$d heeft een stem gekregen van lid #%2$d, die niet meer bestaat.';
+$txt['repair_missing_log_poll_vote'] = 'Een stem is uitgebracht door lid #%1$d op een niet-bestaande poll #%2$d.';
+$txt['repair_missing_thumbnail_parent'] = 'Een miniatuur genaamd %1$s bestaat, maar het heeft geen bijbehorende afbeelding.';
+$txt['repair_report_missing_comments'] = 'Rapport #%1$d van onderwerp: &quot;%2$s&quot; heeft geen commentaar.';
+$txt['repair_comments_missing_report'] = 'Rapportcommentaar #%1$d ingestuurd door %2$s hoort niet bij een rapport.';
+$txt['repair_group_request_missing_member'] = 'Er bestaat een groepsaanvraag voor het verwijderde lid #%1$d.';
+$txt['repair_group_request_missing_group'] = 'Er bestaat een groepsaanvraag voor de verwijderde groep #%1$d.';
+
+$txt['repair_currently_checking'] = 'Controleren op: &quot;%1$s&quot;';
+$txt['repair_currently_fixing'] = 'Repareren van: &quot;%1$s&quot;';
+$txt['repair_operation_zero_topics'] = 'topics waarvan id_topic onjuist op nul staat';
+$txt['repair_operation_zero_messages'] = 'berichten waarvan id_msg onjuist op nul staat';
+$txt['repair_operation_missing_topics'] = 'berichten die niet aan een topic gekoppeld zijn';
+$txt['repair_operation_missing_messages'] = 'topics zonder enige berichten';
+$txt['repair_operation_stats_topics'] = 'topics met een ongeldig eerste of laatste bericht-id';
+$txt['repair_operation_stats_topics2'] = 'topics met een onjuist aantal reacties';
+$txt['repair_operation_stats_topics3'] = 'topics met een onjuist aantal goedgekeurde berichten';
+$txt['repair_operation_missing_boards'] = 'topics in een niet-bestaand board';
+$txt['repair_operation_missing_categories'] = 'boards in een niet-bestaande categorie';
+$txt['repair_operation_missing_posters'] = 'berichten gekoppeld aan niet-bestaande leden';
+$txt['repair_operation_missing_parents'] = 'sub-boards toegekend aan niet-bestaande boards';
+$txt['repair_operation_missing_polls'] = 'topics gekoppeld aan niet-bestaande polls';
+$txt['repair_operation_missing_calendar_topics'] = 'gebeurtenissen gekoppeld aan niet-bestaande topics';
+$txt['repair_operation_missing_log_topics'] = 'topiclogs gekoppeld aan niet-bestaande topics';
+$txt['repair_operation_missing_log_topics_members'] = 'topiclogs gekoppeld aan niet-bestaande leden';
+$txt['repair_operation_missing_log_boards'] = 'boardlogs gekoppeld aan niet-bestaande boards';
+$txt['repair_operation_missing_log_boards_members'] = 'boardlogs gekoppeld aan niet-bestaande leden';
+$txt['repair_operation_missing_log_mark_read'] = '\'markeer als gelezen\'-data gekoppeld aan niet-bestaande boards';
+$txt['repair_operation_missing_log_mark_read_members'] = '\'markeer als gelezen\'-data gekoppeld aan niet-bestaande leden';
+$txt['repair_operation_missing_pms'] = 'PM-ontvangers waarvan het persoonlijk bericht ontbreekt';
+$txt['repair_operation_missing_recipients'] = 'PM-ontvangers gekoppeld aan een niet-bestaand lid';
+$txt['repair_operation_missing_senders'] = 'persoonlijke berichten gekoppeld aan een niet-bestaand lid';
+$txt['repair_operation_missing_notify_members'] = 'notificatielogs gelinkt aan een niet-bestaand lid';
+$txt['repair_operation_missing_cached_subject'] = 'topics zonder ingang in de zoekcache';
+$txt['repair_operation_missing_topic_for_cache'] = 'zoekcache-ingangen gekoppeld aan niet-bestaande topics';
+$txt['repair_operation_missing_member_vote'] = 'stemmen in polls gekoppeld aan niet-bestaande leden';
+$txt['repair_operation_missing_log_poll_vote'] = 'stemmen in polls gekoppeld aan een niet-bestaande poll';
+$txt['repair_operation_report_missing_comments'] = 'topicrapportages zonder commentaar';
+$txt['repair_operation_comments_missing_report'] = 'rapportcommentaar gekoppeld aan een niet-bestaand topicrapport';
+$txt['repair_operation_group_request_missing_member'] = 'groepverzoeken gekoppeld aan een niet-bestaand lid';
+$txt['repair_operation_group_request_missing_group'] = 'groepverzoeken voor een niet-bestaande groep';
+
+$txt['salvaged_category_name'] = 'Teruggewonnen gegevens';
+$txt['salvaged_category_error'] = 'Er kon geen categorie voor de teruggewonnen gegevens aangemaakt worden!';
+$txt['salvaged_category_description'] = 'Boards gemaakt voor herstelde berichten';
+$txt['salvaged_board_name'] = 'Teruggewonnen topics';
+$txt['salvaged_board_description'] = 'Topics die aangemaakt zijn voor berichten met een niet-bestaand onderwerp';
+$txt['salvaged_board_error'] = 'Er kon geen board aangemaakt worden voor de teruggewonnen topics!';
+$txt['salvaged_poll_topic_name'] = 'Teruggewonnen poll';
+$txt['salvaged_poll_message_body'] = 'Deze poll werd aangetroffen zonder bijbehorend topic.';
+$txt['salvaged_poll_question'] = 'Deze poll bevat geen vragen.';
+
+$txt['database_optimize'] = 'Optimaliseer database';
+$txt['database_numb_tables'] = 'De database bevat %1$d tabellen.';
+$txt['database_optimize_attempt'] = 'Bezig met het optimaliseren van de database...';
+$txt['database_optimizing'] = 'Optimaliseren van %1$s... %2$01.2f kb geoptimaliseerd.';
+$txt['database_already_optimized'] = 'Alle tabellen zijn al geoptimaliseerd.';
+$txt['database_opimize_unneeded'] = 'Het was niet nodig de tabellen te optimaliseren.';
+$txt['database_optimized'] = ' tabel(len) geoptimaliseerd';
+$txt['database_no_id'] = 'heeft een niet-bestaand lid-ID';
+
+$txt['apply_filter'] = 'Pas filter toe';
+$txt['applying_filter'] = 'Past filter toe';
+$txt['filter_only_member'] = 'Toon alleen de foutmeldingen van deze gebruiker';
+$txt['filter_only_ip'] = 'Toon alleen de foutmeldingen van dit IP-adres';
+$txt['filter_only_session'] = 'Toon alleen de foutmeldingen van deze sessie';
+$txt['filter_only_url'] = 'Toon alleen de foutmeldingen van deze URL';
+$txt['filter_only_message'] = 'Toon alleen de fouten met hetzelfde bericht';
+$txt['session'] = 'Sessie';
+$txt['error'] = 'Fout';
+$txt['error_url'] = 'URL van de pagina die de fout veroorzaakt';
+$txt['error_message'] = 'Foutmelding';
+$txt['error_file'] = 'Bestand';
+$txt['error_line'] = 'Regel';
+$txt['clear_filter'] = 'Wis filter';
+$txt['remove_selection'] = 'Verwijder selectie';
+$txt['remove_filtered_results'] = 'Verwijder alle gefilterde resultaten';
+$txt['sure_about_errorlog_remove'] = 'Weet je zeker dat je alle foutmeldingen wilt verwijderen?';
+$txt['remove_selection_confirm'] = 'Weet je zeker dat je de geselecteerde regels wilt verwijderen?';
+$txt['remove_filtered_results_confirm'] = 'Weet je zeker dat je de gefilterde regels wilt verwijderen?';
+$txt['reverse_direction'] = 'Zet de lijst in omgekeerd-chronologische volgorde';
+$txt['error_type'] = 'Fouttype';
+$txt['filter_only_type'] = 'Toon alleen fouten van dit type';
+$txt['filter_only_file'] = 'Toon alleen fouten van dit bestand';
+$txt['apply_filter_of_type'] = 'Filter op type';
+$txt['backtrace_title'] = 'Backtrace informatie';
+// argument(s): error message, function, filename, line nr, filehash, $scripturl
+$txt['backtrace_info'] = '<b>#%1$d</b>: %2$s()<br>Called from <a href="%6$s?action=admin;area=logs;sa=errorlog;file=%5$s;line=%4$d" onclick="return reqWin(this.href, 600, 480, false);">%3$s on line %4$d</a>';
+
+$txt['errortype_all'] = 'Alle fouten';
+$txt['errortype_general'] = 'Algemeen';
+$txt['errortype_general_desc'] = 'Algemene fouten die niet in een andere categorie passen.';
+$txt['errortype_critical'] = 'Critical';
+$txt['errortype_critical_desc'] = 'Kritieke fouten. Deze fouten moeten zo snel mogelijk verholpen worden. Het negeren van deze fouten zou een niet-functionerend forum en/of veiligheidsrisico\'s tot gevolg kunnen hebben.';
+$txt['errortype_database'] = 'Database';
+$txt['errortype_database_desc'] = 'Fouten veroorzaakt door onjuiste queries. Deze zouden in de meeste gevallen aan het SMF-team gerapporteerd moeten worden.';
+$txt['errortype_undefined_vars'] = 'Niet gespecificeerd';
+$txt['errortype_undefined_vars_desc'] = 'Fouten ontstaan door het gebruik van ongedefinieerde variabelen, indices of beginpunten.';
+$txt['errortype_ban'] = 'Verbanningen';
+$txt['errortype_ban_desc'] = 'Een log met verbannen leden die het proberen proberen te benaderen.';
+$txt['errortype_template'] = 'Sjabloon';
+$txt['errortype_template_desc'] = 'Fouten gerelateerd aan het laden van templates.';
+$txt['errortype_user'] = 'lid';
+$txt['errortype_user_desc'] = 'Fouten ontstaan door gebruikersfouten. Hieronder vallen bijvoorbeeld onjuiste wachtwoorden, pogingen tot inloggen terwijl het lid verbannen is, of het uitvoeren van een actie terwijl het lid daartoe geen permissie heeft.';
+$txt['errortype_cron'] = 'Cron';
+$txt['errortype_cron_desc'] = 'Fouten als resultaat van achtergrond taken.';
+$txt['errortype_paidsubs'] = 'Betaalde Abonnementen';
+$txt['errortype_paidsubs_desc'] = 'Fouten veroorzaakt door betaalde abonnementen, inclusief mogelijke notificaties van mislukte betalingen.';
+$txt['errortype_backup'] = 'Backups';
+$txt['errortype_backup_desc'] = 'Fouten veroorzaakt door bestand backups, gewoonlijk bevatten deze berichten met uitleg waarom de procedure niet gewerkt heeft.';
+$txt['errortype_login'] = 'Inlogpogingen';
+$txt['errortype_login_desc'] = 'Fouten veroorzaakt door mislukte inlogpogingen of brute kracht aanvallen.';
+
+$txt['maintain_recount'] = 'Herbereken alle forumtotalen en statistieken';
+$txt['maintain_recount_info'] = 'Mocht bijvoorbeeld het aantal reacties op van een topic onjuist zijn, of het aantal PM\'s in je inbox niet juist worden weergegeven: deze functie hertelt alle opgeslagen tellingen en statistieken voor je.';
+$txt['maintain_errors'] = 'Zoek en repareer alle fouten';
+$txt['maintain_errors_info'] = 'Als bijvoorbeeld berichten en topics verdwenen zijn na een servercrash, dan kan deze functie ze wellicht terugvinden.';
+$txt['maintain_logs'] = 'Leeg alle onbelangrijke logs';
+$txt['maintain_logs_info'] = 'Deze functie leegt alle onbelangrijke logs. Alhoewel deze functie geen negatieve bijwerkingen heeft, wordt aangeraden de functie alleen te gebruiken als er problemen zijn.';
+$txt['maintain_cache'] = 'Empty SMF\'s cache';
+$txt['maintain_cache_info'] = 'This function will empty out the cache should you need it to be cleared.';
+$txt['maintain_optimize'] = 'Optimaliseer alle tabellen';
+$txt['maintain_optimize_info'] = 'Deze taak stelt je in staat om alle tabellen te optimaliseren. Dit zal zogenaamde overhead verwijderen, wat effectief de tabellen kleiner maakt, waardoor je forum wellicht iets sneller zal worden.';
+$txt['maintain_version'] = 'Vergelijk alle bestandsversies met de huidige versies';
+$txt['maintain_version_info'] = 'Deze onderhoudstaak stelt je in staat om een gedetailleerde versiecontrole uit te voeren. De versies van alle forumbestanden zullen hiermee worden vergeleken met de huidige versies ervan.';
+$txt['maintain_run_now'] = 'Voer taak nu uit';
+$txt['maintain_return'] = 'Terug naar forumonderhoud';
+
+$txt['maintain_backup'] = 'Backup de database';
+$txt['maintain_backup_info'] = 'Download een kopie van de forumdatabase als backup voor in geval van nood.';
+$txt['maintain_backup_struct'] = 'Sla de tabelstructuur op.';
+$txt['maintain_backup_data'] = 'Sla de gegevens op (leden, berichten, etc.)';
+$txt['maintain_backup_gz'] = 'Comprimeer het bestand met behulp van gzip.';
+$txt['maintain_backup_save'] = 'Downloaden';
+
+$txt['maintain_old'] = 'Verwijder oude berichten';
+$txt['maintain_old_since_days1'] = 'Verwijder alle topics waarin de afgelopen ';
+$txt['maintain_old_since_days2'] = ' dagen geen nieuwe berichten zijn geplaatst en';
+$txt['maintain_old_nothing_else'] = 'Elk type topic verwijderen.';
+$txt['maintain_old_are_moved'] = 'alle \'dit topic is verplaatst\' berichten';
+$txt['maintain_old_are_locked'] = 'alle gesloten topics';
+$txt['maintain_old_are_not_stickied'] = 'Sluit sticky topics uit';
+$txt['maintain_old_all'] = 'Alle boards (klik om specifieke boards te kiezen)';
+$txt['maintain_old_choose'] = 'Specifieke boards (klik om alle boards te kiezen)';
+$txt['maintain_old_remove'] = 'Verwijder';
+$txt['maintain_old_confirm'] = 'Weet je zeker dat je de oude berichten wilt verwijderen?\n\nDit kan niet ongedaan gemaakt worden!';
+
+$txt['maintain_old_drafts'] = 'Verwijder oude concepten';
+$txt['maintain_old_drafts_days'] = 'Verwijder alle concepten ouder dan';
+$txt['maintain_old_drafts_confirm'] = 'Weet je zeker dat je alle oude concepten wilt verwijderen?-n-Dit kan niet ongedaan gemaakt worden!';
+$txt['maintain_members'] = 'Verwijder inactieve leden';
+$txt['maintain_members_ungrouped'] = 'Niet-gegroepeerde leden <span class="smalltext">(leden die niet in een groep zitten)</span>';
+$txt['maintain_members_since1'] = 'Verwijder alle leden die niet';
+$txt['maintain_members_since2'] = 'in';
+$txt['maintain_members_since3'] = 'dagen.';
+$txt['maintain_members_activated'] = 'hun account geactiveerd hebben';
+$txt['maintain_members_logged_in'] = 'ingelogd hebben';
+$txt['maintain_members_all'] = 'Alle ledengroepen';
+$txt['maintain_members_choose'] = 'Geselecteerde leden';
+$txt['maintain_members_confirm'] = 'Ben je er zeker van dat je deze leden wilt verwijderen?\n\nDit kan niet ongedaan worden gemaakt!';
+
+$txt['text_title'] = 'Converteer naar TEXT';
+$txt['mediumtext_title'] = 'Converteer naar MEDIUMTEXT';
+$txt['mediumtext_introduction'] = 'De standaard berichten tabel kan berichten bevatten tot een grootte van 65535 karakters, om grotere teksten te kunnen opslaan moet de kolom geconverteerd worden naar "MEDIUMTEXT". Het is ook mogelijk de komol terug te zetten naar TEXT (hiermee wordt opslagruimte bespaard), maar <strong>alleen</strong> als geen bericht in de database groter is dan 65535 karakters. Deze voorwaarde wordt gecontroleerd voordat de conversie wordt uitgevoerd.';
+$txt['body_checking_introduction'] = 'Deze functie zal alle kolommen in de database die de berichtteksten bevatten omzetten naar "TEXT" formaat (momenteel is dit "MEDIUMTEXT"). Door deze operatie zal de gebruikte ruimte per bericht iets kleiner worden (1 byte per bericht). Elke bericht in de database dat langer is dan 65535 karakters zal worden ingekort en een deel van de tekst zal verloren gaan.';
+$txt['exceeding_messages'] = 'De volgende berichten zijn langer dan 65535 karakters en zullen worden ingekort door dit proces:';
+$txt['exceeding_messages_morethan'] = 'En nog %1$d meer';
+$txt['convert_to_text'] = 'Er zijn geen berichten langer dan 65535 karakters. Je kunt veilig verder gaan met deze conversie.';
+$txt['convert_to_suggest_text'] = 'De berichttekst kolom in de database is momenteel ingesteld als MEDIUMTEXT, maar de maximaal ingestelde lengte voor berichten is minder dan 65535 karakters. Je kunt wat ruimte besparen door de kolom om te zetten naar TEXT.';
+
+$txt['entity_convert_title'] = 'Converteer HTML-entities naar UTF-8-karakters';
+$txt['entity_convert_only_utf8'] = 'De database moet in UTF-8 formaat zijn alvorens HTML-entities geconverteerd kunnen worden naar UTF-8!';
+$txt['entity_convert_introduction'] = 'Deze functie zal alle karakters die in de database opgeslagen zijn as HTML-entities naar UTF-8-karakters converteren. Dit is met name handig wanneer je zojuist je forum vanuit een karakterset als ISO-8859-1 hebt geconverteerd, terwijl er niet-latijnse karakters werden gebruikt op het forum. De browser zal dan alle karakters als HTML-entities versturen. Bijvoorbeeld: de HTML-entity &amp;#945; representeert de Griekse letter &#945; (alpha). De conversie naar UTF-8 zal zoekopdrachten en sortering van tekst bevorderen, en opslagruimte besparen.';
+$txt['entity_convert_proceed'] = 'Ga verder';
+
+// Move topics out.
+$txt['move_topics_maintenance'] = 'Verplaats topics';
+$txt['move_topics_select_board'] = 'Selecteer board';
+$txt['move_topics_from'] = 'Verplaats topics van';
+$txt['move_topics_to'] = 'naar';
+$txt['move_topics_now'] = 'Nu verplaatsen';
+$txt['move_topics_confirm'] = 'Weet je zeker dat je ALLE topics van &quot;%board_from%&quot; naar &quot;%board_to%&quot; wilt verplaatsen?';
+$txt['move_topics_older_than'] = 'Verplaats topics waar nog niet in geantwoord is langer dan ';
+$txt['move_type_sticky'] = 'Sticky topics';
+$txt['move_type_locked'] = 'Gesloten topics';
+$txt['move_zero_all'] = 'Vul 0 in om alle topics te verplaatsen';
+
+$txt['maintain_reattribute_posts'] = 'Berichten opnieuw toekennen';
+$txt['reattribute_guest_posts'] = 'Gastposts toekennen gemaakt met';
+$txt['reattribute_email'] = 'het e-mailadres';
+$txt['reattribute_username'] = 'de gebruikersnaam';
+$txt['reattribute_current_member'] = 'posts toekennen aan';
+$txt['reattribute_increase_posts'] = 'Tel berichten op bij het aantal berichten';
+$txt['reattribute'] = 'Toekennen';
+// Don't use entities in the below string.
+$txt['reattribute_confirm'] = 'Weet je zeker dat je alle gastposts met %type% "%find%" aan lid "%member_to%" wilt toekennen?';
+$txt['reattribute_confirm_username'] = 'de gebruikersnaam';
+$txt['reattribute_confirm_email'] = 'het e-mailadres';
+$txt['reattribute_cannot_find_member'] = 'Kon geen lid vinden om de berichten aan toe te kennen.';
+
+$txt['maintain_recountposts'] = 'Opnieuw tellen berichten';
+$txt['maintain_recountposts_info'] = 'Gebruik deze onderhoudstaak om de totale berichtentelling te herstellen. Deze zal alle relevante berichten tellen per gebruiker en de totaaltellingen in de profielen bijwerken.';
+
+$txt['safe_mode_enabled'] = '<a href="https://php.net/manual/en/features.safe-mode.php">safe_mode</a> is ingeschakeld op jouw server!<br>Een backup uitgevoerd met deze tool is mogelijk niet betrouwbaar!';
+$txt['use_external_tool'] = 'Overweeg een externe tool te gebruiken om een backup van de database te maken, een backup die gemaakt wordt met deze tool zal niet 100% betrouwbaar zijn.';
+$txt['zipped_file'] = 'Als je wilt kun je een gecomprimeerde (zipped) backup maken.';
+$txt['plain_text'] = 'De beste methode om een backup van je database te maken is door een platte tekst bestand te maken, een gecomprimeerde backup is mogelijk niet betrouwbaar.';
+$txt['enable_maintenance1'] = 'In verband met de omvang van je forum is het raadzaam het forum in "onderhoudsmodus" te plaatsen voordat je de backup start.';
+$txt['enable_maintenance2'] = 'Plaats, in verband met de omvang van je forum, het forum eerst in "onderhoudsmodus".';
+
+?>
