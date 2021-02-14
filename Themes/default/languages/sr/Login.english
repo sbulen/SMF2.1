@@ -2,10 +2,10 @@
 // Version: 2.1 RC3; Login
 
 // Registration agreement page.
-$txt['registration_agreement'] = 'Registration Agreement';
-$txt['agreement_agree'] = 'I accept the terms of the agreement.';
-$txt['agreement_agree_coppa_above'] = 'I accept the terms of the agreement and I am at least %1$d years old.';
-$txt['agreement_agree_coppa_below'] = 'I accept the terms of the agreement and I am younger than %1$d years old.';
+$txt['registration_agreement'] = 'Sporazum o registraciji';
+$txt['agreement_agree'] = 'Prihvatam sporazum o registraciji.';
+$txt['agreement_agree_coppa_above'] = 'Prihvatam sporazum o registraciji i imam najmanje %1$d godina.';
+$txt['agreement_agree_coppa_below'] = 'Prihvatam sporazum o registraciji i mlađi sam od %1$d godina.';
 $txt['privacy_policy'] = 'Privacy Policy';
 $txt['agreement_policy_agree'] = 'I accept the terms of the agreement and privacy policy.';
 $txt['agreement_policy_agree_coppa_above'] = 'I accept the terms of the agreement and privacy policy, and I am at least %1$d years old.';
@@ -13,140 +13,140 @@ $txt['agreement_policy_agree_coppa_below'] = 'I accept the terms of the agreemen
 $txt['policy_agree'] = 'I accept the terms of the privacy policy.';
 $txt['policy_agree_coppa_above'] = 'I accept the terms of the privacy policy, and I am at least %1$d years old.';
 $txt['policy_agree_coppa_below'] = 'I accept the terms of the privacy policy, and I am younger than %1$d years old.';
-$txt['agree_coppa_above'] = 'I am at least %1$d years old.';
-$txt['agree_coppa_below'] = 'I am younger than %1$d years old.';
+$txt['agree_coppa_above'] = 'Ja sam star najmanje %1$d godina. ';
+$txt['agree_coppa_below'] = 'Ja sam mlađi od %1$d godina.  ';
 
 // Registration form.
-$txt['registration_form'] = 'Registration Form';
-$txt['need_username'] = 'You need to fill in a username.';
-$txt['no_password'] = 'You didn\'t enter your password.';
-$txt['incorrect_password'] = 'Password incorrect';
-$txt['choose_username'] = 'Choose username';
-$txt['maintain_mode'] = 'Maintenance Mode';
-$txt['registration_successful'] = 'Registration successful';
-$txt['now_a_member'] = 'Success! You are now a member of the forum.';
+$txt['registration_form'] = 'Obrazac za registraciju';
+$txt['need_username'] = 'Morate da unesete korisničko ime.';
+$txt['no_password'] = 'Niste uneli svoju lozinku.';
+$txt['incorrect_password'] = 'Pogrešna lozinka';
+$txt['choose_username'] = 'Izaberite korisničko ime';
+$txt['maintain_mode'] = 'Mod održavanja';
+$txt['registration_successful'] = 'Registracija je uspešna';
+$txt['now_a_member'] = 'Uspeh! Sada ste član ovog foruma.';
 // Use numeric entities in the below string.
-$txt['your_password'] = 'and your password is';
-$txt['valid_email_needed'] = 'Please enter a valid email address, %1$s.';
-$txt['required_info'] = 'Required Information';
-$txt['identification_by_smf'] = 'Used to identify you on the forum.';
-$txt['additional_information'] = 'Additional Information';
-$txt['warning'] = 'Warning!';
-$txt['only_members_can_access'] = 'Only registered members are allowed to access this section.';
-$txt['login_below'] = 'Please login below.';
-$txt['login_below_or_register'] = 'Please login below or <a href="%1$s">sign up for an account</a> with %2$s';
+$txt['your_password'] = 'a vaša lozinka je';
+$txt['valid_email_needed'] = 'Molim vas unesite ispravnu imejl adresu, %1$s.';
+$txt['required_info'] = 'Zahtevane informacije';
+$txt['identification_by_smf'] = 'Koristi se samo za identifikaciju SMF-u. Možete da koristite specijalne karaktere nakon što se prijavite, menjanjem vašeg prikazanog imena u profilu.';
+$txt['additional_information'] = 'Dodatne informacije';
+$txt['warning'] = 'Upozorenje!';
+$txt['only_members_can_access'] = 'Samo registrovani članovi mogu da pristupe ovom delu.';
+$txt['login_below'] = 'Prijavite se ispod ili';
+$txt['login_below_or_register'] = 'Molimo da se prijavite ispod ili <a href="%1$s">registrujte nalog</a> sa %2$s';
 
 // Use numeric entities in the below two strings.
-$txt['may_change_in_profile'] = 'You may change it after you login by going to the profile page, or by visiting this page after you login:';
-$txt['your_username_is'] = 'Your username is: ';
+$txt['may_change_in_profile'] = 'Možete da je promenite odlaskom u profil nakon prijavljivanja, ili prilikom posete ove stranice nakon prijavljivanja:';
+$txt['your_username_is'] = 'Vaše korisničko ime je: ';
 
-$txt['login_hash_error'] = 'Password security has recently been upgraded. Please enter your password again.';
+$txt['login_hash_error'] = 'Bezbednost lozinke je skoro ažurirana. Unesite ponovo svoju lozinku.';
 
-$txt['ban_register_prohibited'] = 'Sorry, you are not allowed to sign up on this forum.';
+$txt['ban_register_prohibited'] = 'Izvinite ali vam nije dozvoljeno da se registrujete na ovaj forum.';
 
-$txt['activate_account'] = 'Account activation';
-$txt['activate_success'] = 'Your account has been successfully activated. You can now proceed to login.';
-$txt['activate_not_completed1'] = 'Your email address needs to be validated before you can login.';
-$txt['activate_not_completed2'] = 'Need another activation email?';
-$txt['activate_after_registration'] = 'Thank you for signing up. You will receive an email soon with a link to activate your account. If you don\'t receive an email after some time, check your spam folder.';
-$txt['invalid_userid'] = 'User does not exist';
-$txt['invalid_activation_code'] = 'Invalid activation code';
-$txt['invalid_activation_username'] = 'Username or email';
-$txt['invalid_activation_new'] = 'If you signed up with the wrong email address, type a new one and your password here.';
-$txt['invalid_activation_new_email'] = 'New email address';
-$txt['invalid_activation_password'] = 'Old password';
-$txt['invalid_activation_resend'] = 'Resend activation code';
-$txt['invalid_activation_known'] = 'If you already know your activation code, please type it here.';
-$txt['invalid_activation_retry'] = 'Activation code';
-$txt['invalid_activation_submit'] = 'Activate';
+$txt['activate_account'] = 'Aktivacija naloga';
+$txt['activate_success'] = 'Vaš nalog je uspešno aktiviran. Sada možete da se prijavite.';
+$txt['activate_not_completed1'] = 'Vaša imejl adresa mora da bude potvrđena pre nego što se prijavite.';
+$txt['activate_not_completed2'] = 'Potreban vam je još jedan aktivacioni mejl?';
+$txt['activate_after_registration'] = 'Zahvaljujemo se na registraciji. Uskoro ćete primiti mejl sa linkom za aktivaciju vašeg naloga. Ukoliko ne budete primili mejl nakon izvesnog vremena, proverite vaš folder sa neželjenom poštom (spam).';
+$txt['invalid_userid'] = 'Korisnik ne postoji';
+$txt['invalid_activation_code'] = 'Pogrešan aktivacioni kod';
+$txt['invalid_activation_username'] = 'Korisničko ime ili imejl';
+$txt['invalid_activation_new'] = 'Ako ste pri registraciji upotrebili pogrešnu imejl adresu, unesite novu zajedno sa vašom lozinkom.';
+$txt['invalid_activation_new_email'] = 'Nova imejl adresa';
+$txt['invalid_activation_password'] = 'Stara lozinka';
+$txt['invalid_activation_resend'] = 'Ponovo pošalji aktivacioni kod';
+$txt['invalid_activation_known'] = 'Ako već znate svoj aktivacioni kod, unesite ga ovde.';
+$txt['invalid_activation_retry'] = 'Aktivacioni kod';
+$txt['invalid_activation_submit'] = 'Aktiviraj';
 
-$txt['coppa_no_consent'] = 'The administrator has still not received parent/guardian consent for your account.';
-$txt['coppa_need_more_details'] = 'Need more details?';
+$txt['coppa_no_consent'] = 'Administrator još nije primio saglasnost roditelja/staratelja za vaš nalog.';
+$txt['coppa_need_more_details'] = 'Potrebno vam je još detalja?';
 
-$txt['awaiting_delete_account'] = 'Your account has been marked for deletion!<br>If you wish to restore your account, please check the &quot;Reactivate my account&quot; box, and login again.';
-$txt['undelete_account'] = 'Reactivate my account';
+$txt['awaiting_delete_account'] = 'Vaš nalog je označen za brisanje!<br />Ako želite da povratite svoj nalog, označite polje &quot;Ponovo aktiviraj moj nalog&quot; i prijavite se ponovo.';
+$txt['undelete_account'] = 'Ponovo aktiviraj moj nalog';
 
 // Use numeric entities in the below three strings.
-$txt['change_password'] = 'New Password Details';
-$txt['change_password_login'] = 'Your login details at';
-$txt['change_password_new'] = 'have been changed and your password reset. Below are your new login details.';
+$txt['change_password'] = 'Detalji o novoj lozinci';
+$txt['change_password_login'] = 'Vaši detalji o prijavljivanju na';
+$txt['change_password_new'] = 'su promenjeni a vaša lozinka je resetovana. Ispod su novi detalji o prijavljivanju.';
 
-$txt['in_maintain_mode'] = 'This board is in Maintenance Mode.';
+$txt['in_maintain_mode'] = 'Ovaj forum je u modu održavanja.';
 
 // These two are used as a javascript alert; please use international characters directly, not as entities.
-$txt['register_agree'] = 'Please read and accept the agreement before signing up.';
-$txt['register_passwords_differ_js'] = 'The two passwords you entered are not the same!';
+$txt['register_agree'] = 'Molim vas pročitajte i prihvatite saglasnost pre registracije.';
+$txt['register_passwords_differ_js'] = 'Lozinke koje ste uneli nisu iste!';
 
-$txt['approval_after_registration'] = 'Thank you for signing up. The admin must approve your registration before you may begin to use your account, you will receive an email shortly advising you of the admins decision.';
+$txt['approval_after_registration'] = 'Zahvaljujemo se na registraciji. Administrator mora da odobri vašu registraciji pre nego što počnete da koristite svoj nalog. Ubrzo ćete primiti mejl sa obaveštenjem o administratorovoj odluci.';
 
-$txt['admin_settings_desc'] = 'Here you can change a variety of settings related to registration of new members.';
+$txt['admin_settings_desc'] = 'Ovde možete da promenite razna podešavanja vezana za registraciju novih članova.';
 
-$txt['setting_registration_method'] = 'Method of registration employed for new members';
-$txt['setting_registration_disabled'] = 'Registration Disabled';
-$txt['setting_registration_standard'] = 'Immediate Registration';
-$txt['setting_registration_activate'] = 'Email Activation';
-$txt['setting_registration_approval'] = 'Admin Approval';
-$txt['setting_send_welcomeEmail'] = 'Send welcome email to new members';
+$txt['setting_registration_method'] = 'Način registracije novih članova';
+$txt['setting_registration_disabled'] = 'Registracija onemogućena';
+$txt['setting_registration_standard'] = 'Neposredna registracija';
+$txt['setting_registration_activate'] = 'Aktivacija mejlom';
+$txt['setting_registration_approval'] = 'Odobravanje člana';
+$txt['setting_send_welcomeEmail'] = 'Pošalji pozdravni mejl svim novim članovima';
 
-$txt['setting_coppaAge'] = 'Age below which to apply registration restrictions';
-$txt['setting_coppaType'] = 'Action to take when a user below minimum age registers';
-$txt['setting_coppaType_reject'] = 'Reject their registration';
-$txt['setting_coppaType_approval'] = 'Require parent/guardian approval';
-$txt['setting_coppaPost'] = 'Postal address to which approval forms should be sent';
-$txt['setting_coppaPost_desc'] = 'Only applies if age restriction is in place';
-$txt['setting_coppaFax'] = 'Fax number to which approval forms should be faxed';
-$txt['setting_coppaPhone'] = 'Contact number for parents to contact with age restriction queries';
+$txt['setting_coppaAge'] = 'Starost ispod koje počinje primenjivanje ograničenja registracije';
+$txt['setting_coppaType'] = 'Akcija za preduzimanje kada se korisnik mlađi od minimuma registruje';
+$txt['setting_coppaType_reject'] = 'Odbaci registraciju';
+$txt['setting_coppaType_approval'] = 'Zahtevaj odobrenje roditelja/staratelja';
+$txt['setting_coppaPost'] = 'Poštanska adresa na koju bi odobrenje trebalo da bude poslato';
+$txt['setting_coppaPost_desc'] = 'Primenjuje se samo kada je postavljeno ograničenje starosti';
+$txt['setting_coppaFax'] = 'Broj faksa na koji bi odobrenje trebalo da bude poslato';
+$txt['setting_coppaPhone'] = 'Broj za stupanje u vezu sa roditeljima oko pitanja vezanih za ograničenje starosti';
 
-$txt['admin_register'] = 'Registration of new member';
-$txt['admin_register_desc'] = 'From here you can register new members into the forum, and if desired, email them their details.';
-$txt['admin_register_username'] = 'New Username';
-$txt['admin_register_email'] = 'Email Address';
-$txt['admin_register_password'] = 'Password';
-$txt['admin_register_username_desc'] = 'Username for the new member';
-$txt['admin_register_email_desc'] = 'Email address of the member';
-$txt['admin_register_password_desc'] = 'Password for new member';
-$txt['admin_register_email_detail'] = 'Email new password to user';
-$txt['admin_register_email_detail_desc'] = 'Email address required even if unchecked';
-$txt['admin_register_email_activate'] = 'Require user to activate the account';
-$txt['admin_register_group'] = 'Primary Membergroup';
-$txt['admin_register_group_desc'] = 'Primary membergroup new member will belong to';
-$txt['admin_register_group_none'] = '(no primary membergroup)';
-$txt['admin_register_done'] = 'Member %1$s has been registered successfully!';
+$txt['admin_register'] = 'Registracija novog člana';
+$txt['admin_register_desc'] = 'Odavde možete da registrujete nove članove na forum, i ako želite, pošaljete im detalje mejlom.';
+$txt['admin_register_username'] = 'Novo korisničko ime';
+$txt['admin_register_email'] = 'Imejl Adresa';
+$txt['admin_register_password'] = 'Lozinka';
+$txt['admin_register_username_desc'] = 'Korisničko ime novog člana';
+$txt['admin_register_email_desc'] = 'Imejl adresa novog člana';
+$txt['admin_register_password_desc'] = 'Lozinka novog člana';
+$txt['admin_register_email_detail'] = 'Pošalji korisniku novu lozinku mejlom';
+$txt['admin_register_email_detail_desc'] = 'Imejl adresa je potrebna čak i ako opcija nije označena';
+$txt['admin_register_email_activate'] = 'Zahtevajte da korisnik aktivira svoj nalog';
+$txt['admin_register_group'] = 'Primarna grupa članova';
+$txt['admin_register_group_desc'] = 'Primarna korisnička grupa kojoj će korisnik pripadati';
+$txt['admin_register_group_none'] = '(nema primarnog članstva)';
+$txt['admin_register_done'] = 'Član %1$s je uspešno registrovan!';
 
-$txt['coppa_title'] = 'Age restricted Forum';
+$txt['coppa_title'] = 'Forum sa ograničenjem starosti';
 // argument(s): $context['forum_name_html_safe']
 $txt['coppa_after_registration'] = 'Thank you for signing up with %1$s.<br><br>Because you fall under the age of {MINIMUM_AGE}, it is a legal requirement
 	to obtain your parent or guardian\'s permission before you may begin to use your account. To arrange for account activation please print off the form below:';
-$txt['coppa_form_link_popup'] = 'Load Form in new Window';
-$txt['coppa_form_link_download'] = 'Download Form as text file';
-$txt['coppa_send_to_one_option'] = 'Then arrange for your parent/guardian to send the completed form by:';
-$txt['coppa_send_to_two_options'] = 'Then arrange for your parent/guardian to send the completed form by either:';
-$txt['coppa_send_by_post'] = 'Post, to the following address:';
-$txt['coppa_send_by_fax'] = 'Fax, to the following number:';
-$txt['coppa_send_by_phone'] = 'Alternatively, arrange for them to phone the administrator at {PHONE_NUMBER}.';
+$txt['coppa_form_link_popup'] = 'Učitaj zahtev u novom prozoru';
+$txt['coppa_form_link_download'] = 'Preuzmi zahtev kao tekstualnu datoteku';
+$txt['coppa_send_to_one_option'] = 'Zatim neka vaš roditelj ili staratelj pošalje popunjen obrazac:';
+$txt['coppa_send_to_two_options'] = 'Zatim neka vaš roditelj ili staratelj pošalje popunjen obrazac na jedan od ovih načina:';
+$txt['coppa_send_by_post'] = 'poštom, na sledeću adresu:';
+$txt['coppa_send_by_fax'] = 'faksom, na sledeći broj:';
+$txt['coppa_send_by_phone'] = 'Umesto ovoga, roditelj ili staratelj može pozvati administratora na broj {PHONE_NUMBER}.';
 
 // argument(s): $context['forum_name_html_safe']
 $txt['coppa_form_title'] = 'Permission form for registration at %1$s';
-$txt['coppa_form_address'] = 'Address';
-$txt['coppa_form_date'] = 'Date';
+$txt['coppa_form_address'] = 'Adresa';
+$txt['coppa_form_date'] = 'Datum';
 // argument(s): $context['forum_name_html_safe']
 $txt['coppa_form_body'] = 'I {PARENT_NAME},<br><br>Give permission for {CHILD_NAME} (child name) to become a fully registered member of the forum: %1$s, with the username: {USER_NAME}.<br><br>I understand that certain personal information entered by {USER_NAME} may be shown to other users of the forum.<br><br>Signed:<br>{PARENT_NAME} (Parent/Guardian).';
 
-$txt['visual_verification_sound_again'] = 'Play again';
-$txt['visual_verification_sound_close'] = 'Close window';
-$txt['visual_verification_sound_direct'] = 'Having problems hearing this?  Try a direct link to it.';
+$txt['visual_verification_sound_again'] = 'Reprodukuj ponovo';
+$txt['visual_verification_sound_close'] = 'Zatvori prozor';
+$txt['visual_verification_sound_direct'] = 'Imate problema sa slušanjem ovoga? Probajte direktan link.';
 
 // Use numeric entities in the below.
-$txt['registration_username_available'] = 'Username is available';
-$txt['registration_username_unavailable'] = 'Username is not available';
-$txt['registration_username_check'] = 'Check if username is available';
-$txt['registration_password_short'] = 'Password is too short';
-$txt['registration_password_reserved'] = 'Password contains your username/email';
-$txt['registration_password_numbercase'] = 'Password must contain both upper and lower case, and numbers';
-$txt['registration_password_no_match'] = 'Passwords do not match';
-$txt['registration_password_valid'] = 'Password is valid';
+$txt['registration_username_available'] = 'Korisničko ime je dostupno';
+$txt['registration_username_unavailable'] = 'Korisničko ime nije dostupno';
+$txt['registration_username_check'] = 'Proveri da li je korisničko ime dostupno';
+$txt['registration_password_short'] = 'Lozinka je prekratka';
+$txt['registration_password_reserved'] = 'Lozinka sadrži vaše korisničko ime/imejl adresu';
+$txt['registration_password_numbercase'] = 'Lozinka mora da sadrži i VELIKA i mala slova, i brojeve';
+$txt['registration_password_no_match'] = 'Lozinke se ne poklapaju';
+$txt['registration_password_valid'] = 'Lozinka je ispravna';
 
-$txt['registration_errors_occurred'] = 'The following errors were detected in your registration. Please correct them to continue:';
+$txt['registration_errors_occurred'] = 'Sledeće greške su pronađene u vašoj registraciji. Ispravite ih da biste nastavili:';
 $txt['registration_agreement_missing'] = 'The registration agreement file, agreement.txt, is either missing or empty. Registrations have been disabled until this is fixed';
 $txt['registration_policy_missing'] = 'The privacy policy is either missing or empty. Registrations have been disabled until this is fixed';
 
