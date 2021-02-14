@@ -2,37 +2,37 @@
 // Version: 2.1 RC3; Drafts
 
 // profile
-$txt['drafts_show'] = 'Show drafts';
-$txt['drafts_show_desc'] = 'This area shows you all the drafts you currently have saved. From here you can edit them before posting, or you can remove them';
+$txt['drafts_show'] = 'Prikaži Nacrte';
+$txt['drafts_show_desc'] = 'Ovaj odeljak pokazuje sve nacrte koje ste trenutno sačuvali. Odavde možete da ih uredite pre slanja, ili možete da ih uklonite';
 
 // misc
-$txt['drafts'] = 'Drafts';
-$txt['draft_save'] = 'Save draft';
-$txt['draft_save_note'] = 'This will save the text of your post, but it will not save attachments, poll or event information.';
-$txt['draft_none'] = 'You have no drafts.';
-$txt['draft_edit'] = 'Edit draft';
-$txt['draft_hide'] = 'Hide drafts';
-$txt['draft_delete'] = 'Delete draft';
-$txt['draft_saved_on'] = 'Draft last saved';
-$txt['draft_days_ago'] = '%s days ago';
-$txt['draft_retain'] = 'this will be retained for %s more days';
-$txt['draft_remove'] = 'Remove this draft';
-$txt['draft_saved'] = 'The contents have been saved as a draft, and will be accessible from the <a href="%1$s">Show Drafts area</a> of your profile.';
-$txt['draft_pm_saved'] = 'The contents have been saved as a draft, and will be accessible from the <a href="%1$s">Show Drafts area</a> of your message center.';
-$txt['draft_save_warning'] = 'Please note that all drafts will be automatically deleted after %1$d days.';
+$txt['drafts'] = 'Nacrti';
+$txt['draft_save'] = 'Sačuvaj Nacrt';
+$txt['draft_save_note'] = 'To će sačuvati tekst vaše poruke, ali to neće sačuvati priložene datoteke, anketu ili informacije o događaju.';
+$txt['draft_none'] = 'Nemate nacrta.';
+$txt['draft_edit'] = 'Uredi nacrt';
+$txt['draft_hide'] = 'Sakrij nacrte';
+$txt['draft_delete'] = 'Obriši nacrt';
+$txt['draft_saved_on'] = 'Poslednji sačuvani nacrt';
+$txt['draft_days_ago'] = 'pre %s dana';
+$txt['draft_retain'] = 'Ovo će biti zadržano više od %s dana';
+$txt['draft_remove'] = 'Ukloni ovaj nacrt';
+$txt['draft_saved'] = 'Sadržaj je sačuvan kao nacrt, i biće dostupan iz <a href="%1$s">Prikaži odeljak Nacrta</a> vašeg profila.';
+$txt['draft_pm_saved'] = 'Sadržaj je sačuvan kao nacrt, a biće dostupan iz <a href="%1$s">Prikaži odeljak Nacrta</a> vaših poruka.';
+$txt['draft_save_warning'] = 'Imajte na umu da će svi nacrti automatski biti obrisani posle %1$d dana. ';
 
 // Admin options
-$txt['drafts_autosave_enabled'] = 'Enable automatic saving of drafts';
-$txt['drafts_autosave_enabled_subnote'] = 'This will automatically save user drafts in the background on a given frequency. The user must also have the proper permissions';
-$txt['drafts_show_saved_enabled'] = 'Enable the selection of drafts from the posting screen';
-$txt['drafts_show_saved_enabled_subnote'] = 'This will allow the user to select and load appropriate drafts from the posting screen. The user must also have the proper permissions';
-$txt['drafts_keep_days'] = 'Maximum number of days to keep a draft';
-$txt['drafts_keep_days_subnote'] = 'Enter 0 to keep drafts indefinitely';
-$txt['drafts_autosave_frequency'] = 'How often should drafts be autosaved?';
-$txt['drafts_autosave_frequency_subnote'] = 'The minimum allowable value is 30 seconds';
-$txt['drafts_pm_enabled'] = 'Enable the saving of PM drafts';
-$txt['drafts_post_enabled'] = 'Enable the saving of Post drafts';
-$txt['drafts_none'] = 'No subject';
-$txt['drafts_saved'] = 'Draft was successfully saved';
+$txt['drafts_autosave_enabled'] = 'Omogući automatsko čuvanje nacrta';
+$txt['drafts_autosave_enabled_subnote'] = 'Ovo će automatski sačuvati korisnikove nacrte u pozadini s obzirom na učestanost. Korisnik takođe mora da ima odgovarajuće dozvole';
+$txt['drafts_show_saved_enabled'] = 'Omogući izbor nacrta iz ekrana poruka';
+$txt['drafts_show_saved_enabled_subnote'] = 'To će omogućiti korisniku da izabere i učita odgovarajuće nacrte iz ekrana poruka. Korisnik takođe mora da ima odgovarajuće dozvole';
+$txt['drafts_keep_days'] = 'Najveći broj dana za čuvanje nacrta';
+$txt['drafts_keep_days_subnote'] = 'Unesi 0 da sačuvaš nacrte neodređeno';
+$txt['drafts_autosave_frequency'] = 'Koliko često treba da se nacrti automatski sačuvaju?';
+$txt['drafts_autosave_frequency_subnote'] = 'Najmanja dozvoljena vrednost je 30 sekundi';
+$txt['drafts_pm_enabled'] = 'Omogući pohranjivanje PM nacrta';
+$txt['drafts_post_enabled'] = 'Omogući pohranjivanje nacrta Poruka';
+$txt['drafts_none'] = 'Nema Predmeta';
+$txt['drafts_saved'] = 'Nacrt je uspešno sačuvan';
 
 ?>
